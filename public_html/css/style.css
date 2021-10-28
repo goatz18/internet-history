@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -16,7 +15,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 
 .hero-text {
@@ -34,7 +33,7 @@ body, html {
     display: inline-block;
     padding: 10px 25px;
     color: black;
-    background-color: #ddd;
+    background-color: darkgray;
     text-align: center;
     cursor: pointer;
 }
@@ -59,6 +58,7 @@ body, html {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
+    z-index: 2;
 }
 
 /* Change color on hover */
@@ -75,6 +75,8 @@ body, html {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
+    z-index: 4;
+    position: absolute;
 }
 
 /* Main column */
@@ -107,12 +109,12 @@ body, html {
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .navbar {
         flex-direction: column;
-
     }
 }
+
 a:link, a:visited {
     padding: 10px 20px;
     text-align: center;
@@ -130,17 +132,13 @@ a:hover, a:active {
     background-color: white;
     padding: 20px;
 }
+.responsive {
+    width: 100%;
+    height: auto;
+}
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 700px) {
     .box {
         width: 100%;
-    }
-    .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pexels-denniz-futalan-5049261.jpg");
-        height: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
     }
 }

@@ -53,8 +53,8 @@
     /* Style the top navigation bar */
     .navbar {
       display: flex;
-      float: right;
       padding: 14px 20px;
+      float: right;
     }
 
     /* Style the navigation bar links */
@@ -65,7 +65,7 @@
       text-align: center;
       font-size: 22px;
       font-weight: bold;
-      z-index: 2;
+      z-index: 3;
     }
 
     /* Change color on hover */
@@ -80,9 +80,9 @@
       padding: 14px 20px;
       text-decoration: none;
       text-align: center;
-      font-size: 40px;
+      font-size: 3vw;
       font-weight: bold;
-      z-index: 4;
+      z-index: 2;
       position: absolute;
     }
 
@@ -115,13 +115,6 @@
       color: white;
     }
 
-    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 700px) {
-      .navbar {
-        flex-direction: column;
-      }
-    }
-
     a:link, a:visited {
       padding: 10px 20px;
       text-align: center;
@@ -144,12 +137,20 @@
       height: auto;
     }
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-    @media (max-width: 700px) {
+    @media screen and (max-width: 792px) {
       .box {
         width: 100%;
       }
+      .navbar {
+        flex-direction: column;
+      }
+      .hero-text {
+        transform: translate(-75%, -45%);
+      }
+      .logo {
+        font-size: 24px;
+      }
     }
-
   </style>
 </head>
 <body>
@@ -164,8 +165,8 @@
 <!-- Header -->
 <div class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px">Z-Layout With Hero Image and Navigation Bar!</h1>
-    <p style="font-size:25px">I am a Web Developer</p>
+    <h1 style="font-size:50px">One Strand at a Time</h1>
+    <p style="font-size:25px">Many Small Contributions to One Big Web</p>
     <button>Hire me</button>
   </div>
 </div>
