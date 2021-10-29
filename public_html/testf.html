@@ -17,7 +17,7 @@
 
         /* Header/logo Title */
         .header {
-            padding: 30px;
+            padding-top: 35px;
             text-align: center;
             background: white;
             color: rebeccapurple;
@@ -68,7 +68,7 @@
         /* Create two unequal columns that sits next to each other */
         /* Sidebar/left column */
         .side {
-            flex:30%;
+            flex:25%;
             background-color: mediumpurple;
             padding: 20px;
             color: white;
@@ -76,7 +76,7 @@
 
         /* Main column */
         .main {
-            flex:70%;
+            flex:75%;
             background-color: white;
             padding: 20px;
             color: rebeccapurple;
@@ -98,6 +98,7 @@
         }
         .responsive {
             width: 100%;
+            max-width: 510px;
             height: auto;
         }
 
@@ -119,6 +120,17 @@
                 flex-direction: column;
             }
         }
+        @media screen and (min-width: 1100px) {
+            .logo {
+                font-size: 33px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            img {
+                vertical-align: text-bottom;
+            }
+        }
+
         a:link, a:visited {
             background-color: white;
             padding: 10px 20px;
@@ -133,9 +145,11 @@
         }
 
         /* Fake image, just for this example */
-        .webimg {
+        img {
             background-color: #aaa;
             padding: 20px;
+            max-width: 600px;
+            float: left;
         }
 
     </style>
@@ -151,12 +165,20 @@
 </div>
 <!-- Header -->
 <div class="header">
-    <h1>F-Layout!</h1>
-    <h3>This layout resembles the layout of the letter F.</h3>
+    <h1>The Internet</h1>
+    <h3>Behind the Web</h3>
 </div>
 <article>
     <!-- The flexible grid (content) -->
     <div class="row">
+        <div class="main"><img alt="web" class="responsive" src="images/web.jpg">
+            <h2>THE WEB</h2>
+            <h4>Title description, Oct 21, 2021</h4>
+            <p>
+            Some text..
+            Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+        </div>
         <div class="side">
             <h2>About Me</h2>
             <h4>Photo of me:</h4>
@@ -167,19 +189,6 @@
             <div class="fakeimg" style="height:60px;">Image</div><br>
             <div class="fakeimg" style="height:60px;">Image</div><br>
             <div class="fakeimg" style="height:60px;">Image</div>
-        </div>
-        <div class="main">
-            <h2>THE WEB</h2>
-            <h4>Title description, Oct 21, 2021</h4>
-            <div class="webimg"><img src="images/web.jpg" alt="web" class="responsive"></div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <br>
-            <h2>TITLE HEADING</h2>
-            <h4>Title description, Oct 20, 2021</h4>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
     </div>
 </article>
