@@ -16,7 +16,7 @@
     }
 
     .hero-image {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pexels-denniz-futalan-5049261.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/wwweb.jpg");
       height: 50%;
       background-position: center;
       background-repeat: no-repeat;
@@ -30,24 +30,27 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
+      transform: translate(-50%, -43%);
+      color: #E1F1FF;
     }
 
     .hero-text button {
       border: none;
       outline: 0;
       display: inline-block;
-      padding: 10px 25px;
-      color: black;
-      background-color: darkgray;
+      padding: 8px 13px;
+      color: #E1F1FF;
+      background-color: #0060A8;
       text-align: center;
+      font-size: 18px;
+      font-weight: bold;
       cursor: pointer;
+      margin: 26px;
     }
 
     .hero-text button:hover {
-      background-color: #555;
-      color: white;
+      background-color: #002A47;
+      color: #E1F1FF;
     }
 
     /* Style the top navigation bar */
@@ -59,7 +62,7 @@
 
     /* Style the navigation bar links */
     .navbar a {
-      color: white;
+      color: #E1F1FF;
       padding: 14px 20px;
       text-decoration: none;
       text-align: center;
@@ -70,12 +73,12 @@
 
     /* Change color on hover */
     .navbar a:hover {
-      background-color: rebeccapurple;
-      color: white;
+      background-color: #0060A8;
+      color: #E1F1FF;
     }
 
     .logo {
-      color: white;
+      color: #E1F1FF;
       float: left;
       padding: 14px 20px;
       text-decoration: none;
@@ -91,13 +94,13 @@
       float: left;
       width: 33.33%;
       padding: 50px;
-      background: rebeccapurple;
+      background: #0060A8;
     }
     .row {
       content: "";
       display: table;
       clear: both;
-      background: rebeccapurple;
+      background: #0060A8;
     }
 
     /* Fake image, just for this example */
@@ -111,8 +114,9 @@
     .footer {
       padding: 20px;
       text-align: center;
-      background: rebeccapurple;
-      color: white;
+      background: #0060A8;
+      color: #E1F1FF;
+      font-weight: bold;
     }
 
     a:link, a:visited {
@@ -120,16 +124,17 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
+      color: #E1F1FF;
     }
 
     a:hover, a:active {
-      background-color: green;
-      color: white;
+      background-color: #E1F1FF;
+      color: #0060A8;
     }
 
-    /* Fake image, just for this example */
+    /* image, just for this example */
     .webimg {
-      background-color: white;
+      background-color: #E1F1FF;
       padding: 20px;
     }
     .responsive {
@@ -137,7 +142,7 @@
       height: auto;
     }
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 792px) {
+    @media screen and (max-width: 822px) {
       .box {
         width: 100%;
       }
@@ -145,7 +150,7 @@
         flex-direction: column;
       }
       .hero-text {
-        transform: translate(-75%, -45%);
+        transform: translate(-66%, -45%);
       }
       .logo {
         font-size: 24px;
@@ -167,7 +172,7 @@
   <div class="hero-text">
     <h1 style="font-size:50px">One Strand at a Time</h1>
     <p style="font-size:25px">Many Small Contributions to One Big Web</p>
-    <button>Hire me</button>
+    <button>What Started It All</button>
   </div>
 </div>
 <article><!-- The flexible grid (content) -->
@@ -193,12 +198,38 @@
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
+    <div class="row">
+      <div class="box">
+        <h2>THE WEB</h2>
+        <h4>Title description, Oct 21, 2021</h4>
+        <div class="webimg"><img alt="web tiles" class="responsive" height="345" src="images/web.jpg" width="425"></div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <div class="box">
+        <h2>TITLE HEADING</h2>
+        <h4>Title description, Oct 20, 2021</h4>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <div class="box">
+        <h2>TITLE HEADING</h2>
+        <h4>Title description, Oct 20, 2021</h4>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      </div>
   </div>
 </article>
 
 <!-- Footer -->
 <div class="footer">
-  <h2>Jason W. Guerrieri &#169</h2>
+  <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169</a>
+  <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169</a>
+  <a href="" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169</a>
+  <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">W3C Validator</a>
 </div>
 </body>
 </html>

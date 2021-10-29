@@ -51,11 +51,12 @@
         .logo {
             color: rebeccapurple;
             float: left;
-            padding: 14px 20px;
+            padding: 21px 20px;
             text-decoration: none;
             text-align: center;
-            font-size: 40px;
+            font-size: 3vw;
             font-weight: bold;
+            position: absolute;
         }
 
         /* Column container */
@@ -67,7 +68,7 @@
         /* Create two unequal columns that sits next to each other */
         /* Sidebar/left column */
         .side {
-            flex: 30%;
+            flex:30%;
             background-color: mediumpurple;
             padding: 20px;
             color: white;
@@ -75,7 +76,7 @@
 
         /* Main column */
         .main {
-            flex: 70%;
+            flex:70%;
             background-color: white;
             padding: 20px;
             color: rebeccapurple;
@@ -101,8 +102,20 @@
         }
 
         /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 700px) {
-            .row, .navbar {
+        @media screen and (max-width: 600px) {
+            .side, .main {
+                width: 100%;
+            }
+            .row {
+                flex-direction: column;
+            }
+        }
+        @media screen and (max-width: 828px) {
+            .logo {
+                font-size: 25px;
+            }
+
+            .navbar {
                 flex-direction: column;
             }
         }
@@ -123,8 +136,8 @@
         .webimg {
             background-color: #aaa;
             padding: 20px;
-            width: 600px;
         }
+
     </style>
 </head>
 <body>
@@ -172,7 +185,10 @@
 </article>
 <!-- Footer -->
 <div class="footer">
-    <h2>Jason W. Guerrieri &#169</h2>
+    <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169</a>
+    <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169</a>
+    <a href="" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169</a>
+    <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">W3C Validator</a>
 </div>
 </body>
 </html>
