@@ -13,7 +13,7 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
-      background-image: url("images/bwar.jpg");
+      background-image: url("../images/bwar.jpg");
       background-color: white;
       background-position: center top;
       background-repeat: repeat-y;
@@ -89,13 +89,6 @@
       padding-right: 75px;
     }
 
-    /* Footer */
-    .footer {
-      padding: 20px;
-      text-align: center;
-      background: rgba(0,0,0,0.0);
-      color: white;
-    }
     .footer a:hover {
       background-color: rgba(0,135,232,1);
       color: white;
@@ -106,24 +99,32 @@
       height: auto;
     }
 
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #0060A8;
+      color: #E1F1FF;
+      font-weight: bold;
+    }
+
     a:link, a:visited {
-      background-color: rgba(255,255,255,0.75);
-      padding: 10px 20px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      color: rgba(0,135,232,1);
+      color: #E1F1FF;
+      padding: 6px 20px;
+      font-size: 20px;
     }
 
     a:hover, a:active {
-      background-color: white;
-      color: rgba(0,135,232,1);
+      background-color: #E1F1FF;
+      color: #0060A8;
     }
 
-    /* Fake image, just for this example */
+    /* image, just for this example */
     img {
-      background-color: rgba(255,255,255,0.0);
-      padding: 20px;
+      vertical-align:bottom
     }
 
     .break {
@@ -203,31 +204,31 @@
   </style>
 </head>
 <body>
-<!-- Navigation Bar -->
-<div class="logo">History of the Internet</div>
-<div class="navbar">
-  <a href="http://history18.eastus.azurecontainer.io">Home</a>
-  <a href="http://history18.eastus.azurecontainer.io/about.html">About</a>
-</div>
-<!-- Header -->
-<div class="header">
-  <h1>The Ture Story of The Internet</h1>
-  <h3 style="margin-bottom: 42px">Browser Wars</h3>
-</div>
+  <!-- Navigation Bar -->
+  <div class="logo">History of the Internet</div>
+  <div class="navbar">
+    <a href="http://history18.eastus.azurecontainer.io">Home</a>
+    <a href="http://history18.eastus.azurecontainer.io/about.html">About</a>
+  </div>
+  <!-- Header -->
+  <div class="header">
+    <h1>The Ture Story of The Internet</h1>
+    <h3 style="margin-bottom: 42px">Browser Wars</h3>
+  </div>
 <article>
   <!-- The flexible grid (content) -->
   <div class="row">
     <div class="side">
       <h2 style="font-size: 42px;margin-top: 0;text-align: center;padding-top: 19px">What Started It All</h2>
       <h4 style="margin-bottom: 20px;text-align: center">The Atomic Bomb</h4>
-      <img alt="atomic" class="responsive" src="images/atomic.jpg" style="float:right;clear:right;padding-bottom: 35px;">
+      <img alt="atomic" class="responsive" src="../images/atomic.jpg" style="float:right;clear:right;padding-bottom: 35px;">
       <p style="padding-left: 25px;padding-right: 25px">The threat of atomic warfare threatened to cripple a central communication network with one bomb.</p>
       <h4 style="margin-bottom: 20px;text-align: center">Circuit Switching</h4>
-      <img alt="switch" class="responsive" src="images/switchboard.jpg" style="float:right;clear:right;padding-bottom: 35px;">
+      <img alt="switch" class="responsive" src="../images/switchboard.jpg" style="float:right;clear:right;padding-bottom: 35px;">
       <p style="padding-left: 25px;padding-right: 25px">The use of circuit switching required a central location that would connect multiple points of communication. This flaw lead to the idea of packet switching, and the seed of the world wide web was born.</p>
     </div>
     <div class="main">
-      <img alt="darpa" class="responsive" src="images/darpa.png" style="float:right;clear:both;max-height: 225px;width: auto">
+      <img alt="darpa" class="responsive" src="../images/darpa.png" style="float:right;clear:both;max-height: 225px;width: auto">
       <h2>February 7, 1958</h2>
       <h4>President Eisenhower Founds ARPA</h4>
       <p>
@@ -349,10 +350,10 @@
 </article>
 <!-- Footer -->
 <div class="footer">
-  <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169</a>
-  <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169</a>
-  <a href="" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169</a>
-  <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">W3C Validator</a>
+  <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169;</a>
+  <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169;</a>
+  <a href="" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169;</a>
+  <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" src="../images/w3cicon.png" style="padding: 0;float: bottom"></a>
 </div>
 </body>
 </html>

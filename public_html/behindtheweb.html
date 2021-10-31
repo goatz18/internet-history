@@ -50,8 +50,8 @@
 
         /* Change color on hover */
         .navbar a:hover {
-            background-color: rebeccapurple;
-            color: white;
+            background-color: white;
+            color: rebeccapurple;
         }
 
         .logo {
@@ -90,41 +90,42 @@
             padding-right: 75px;
         }
 
-        /* Footer */
-        .footer {
-            padding: 20px;
-            text-align: center;
-            background: rgba(0,0,0,0.0);
-            color: white;
-        }
-        .footer a:hover {
-            background-color: rebeccapurple;
-            color: white;
-        }
         .responsive {
             width: 100%;
             max-width: 510px;
             height: auto;
         }
+        .footer a:hover {
+            background-color: white;
+            color: rgba(70,10,92,0.75);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(70,10,92,0.75);
+            color: #E1F1FF;
+            font-weight: bold;
+        }
 
         a:link, a:visited {
-            background-color: rgba(255,255,255,0.75);
-            padding: 10px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            color: rebeccapurple;
+            color: #E1F1FF;
+            padding: 6px 20px;
+            font-size: 20px;
         }
 
         a:hover, a:active {
-            background-color: white;
-            color: rebeccapurple;
+            background-color: #E1F1FF;
+            color: #0060A8;
         }
 
-        /* Fake image, just for this example */
+        /* image, just for this example */
         img {
-            background-color: rgba(255,255,255,0.0);
-            padding: 20px;
+            vertical-align:bottom
         }
 
         .break {
@@ -204,31 +205,31 @@
     </style>
 </head>
 <body>
-<!-- Navigation Bar -->
-<div class="logo">History of the Internet</div>
-<div class="navbar">
-    <a href="http://history18.eastus.azurecontainer.io">Home</a>
-    <a href="http://history18.eastus.azurecontainer.io/about.html">About</a>
-</div>
-<!-- Header -->
-<div class="header">
-    <h1>The Internet</h1>
-    <h3 style="margin-bottom: 42px">Behind the Web</h3>
-</div>
+    <!-- Navigation Bar -->
+    <div class="logo">History of the Internet</div>
+    <div class="navbar">
+        <a href="http://history18.eastus.azurecontainer.io">Home</a>
+        <a href="http://history18.eastus.azurecontainer.io/about.html">About</a>
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <h1>The Internet</h1>
+        <h3 style="margin-bottom: 42px">Behind the Web</h3>
+    </div>
 <article>
     <!-- The flexible grid (content) -->
     <div class="row">
         <div class="side">
             <h2 style="font-size: 42px;margin-top: 0;text-align: center;padding-top: 19px">What Started It All</h2>
             <h4 style="margin-bottom: 20px;text-align: center">The Atomic Bomb</h4>
-            <img alt="atomic" class="responsive" src="images/atomic.jpg" style="float:right;clear:right;padding-bottom: 35px;">
+            <img alt="atomic" class="responsive" src="images/atomic.jpg" style="float:right;clear:right;padding: 20px 20px 35px 20px">
             <p style="padding-left: 25px;padding-right: 25px">The threat of atomic warfare threatened to cripple a central communication network with one bomb.</p>
             <h4 style="margin-bottom: 20px;text-align: center">Circuit Switching</h4>
-            <img alt="switch" class="responsive" src="images/switchboard.jpg" style="float:right;clear:right;padding-bottom: 35px;">
+            <img alt="switch" class="responsive" src="images/switchboard.jpg" style="float:right;clear:right;padding: 20px 20px 35px 20px;">
             <p style="padding-left: 25px;padding-right: 25px">The use of circuit switching required a central location that would connect multiple points of communication. This flaw lead to the idea of packet switching, and the seed of the world wide web was born.</p>
         </div>
         <div class="main">
-            <img alt="darpa" class="responsive" src="images/darpa.png" style="float:right;clear:both;max-height: 225px;width: auto">
+            <img alt="darpa" class="responsive" src="images/darpa.png" style="float:right;clear:both;max-height: 225px;width: auto;padding: 20px">
             <h2>February 7, 1958</h2>
             <h4>President Eisenhower Founds ARPA</h4>
             <p>
@@ -342,18 +343,19 @@
                 Tim Berners-Lee founds the World Wide Web Project and later the World Wide Web Consortium (W3C) with the aim at unifying standards across the web.
             </p>
             <p>
-                Marc Anderson codes the first web browser called MOSAIC, later known as Netscape. The next chapter of the Internet begins, <a href="http://history18.eastus.azurecontainer.io/browserwars.html" style="background-color: rgba(0,0,0,0.0);padding: 0;color: red;font-style: italic;">Browser Wars</a>.
+                Marc Anderson codes the first web browser called MOSAIC, later known as Netscape. The next chapter of the Internet begins, <a href="http://history18.eastus.azurecontainer.io/browserwars.html" style="background-color: rgba(0,0,0,0.0);padding: 0;color: red;font-style: italic;font-size: 30px">Browser Wars</a>.
             </p>
         </div>
     </div>
 
 </article>
 <!-- Footer -->
-<div class="footer">
-    <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169</a>
-    <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169</a>
-    <a href="" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169</a>
-    <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">W3C Validator</a>
-</div>
+    <div class="footer">
+        <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169;</a>
+        <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169;</a>
+        <a href="" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169;</a>
+        <a href="http://history18.eastus.azurecontainer.io/about.html" rel="nofollow" title="Ayush Deshpande Github">About & Sources</a>
+        <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" class="responsive" src="images/w3cicon.png" style="padding: 0;float: bottom"></a>
+    </div>
 </body>
 </html>

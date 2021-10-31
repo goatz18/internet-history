@@ -16,13 +16,13 @@
         }
 
         .hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pexels-denniz-futalan-5049261.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pexels-denniz-futalan-5049261.jpg");
             height: 50%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            z-index: -1;
+            z-index: 1;
         }
 
         .hero-text {
@@ -40,7 +40,7 @@
             display: inline-block;
             padding: 10px 25px;
             color: black;
-            background-color: #ddd;
+            background-color: darkgray;
             text-align: center;
             cursor: pointer;
         }
@@ -48,15 +48,6 @@
         .hero-text button:hover {
             background-color: #555;
             color: white;
-        }
-
-        /* Header/logo Title */
-        .header {
-            padding: 225px;
-            text-align: center;
-            background: white;
-            color: rebeccapurple;
-            font-size: 35px;
         }
 
         /* Style the top navigation bar */
@@ -74,6 +65,7 @@
             text-align: center;
             font-size: 22px;
             font-weight: bold;
+            z-index: 2;
         }
 
         /* Change color on hover */
@@ -90,6 +82,8 @@
             text-align: center;
             font-size: 40px;
             font-weight: bold;
+            z-index: 4;
+            position: absolute;
         }
 
         /* Main column */
@@ -127,6 +121,7 @@
                 flex-direction: column;
             }
         }
+
         a:link, a:visited {
             padding: 10px 20px;
             text-align: center;
@@ -149,25 +144,18 @@
             .box {
                 width: 100%;
             }
-            .hero-image {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pexels-denniz-futalan-5049261.jpg");
-                height: 50%;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-            }
         }
+
     </style>
 </head>
 <body>
 <!-- Navigation Bar -->
 <div class="logo">History of the Internet</div>
 <div class="navbar">
-    <a href="#">In the Beginning</a>
+    <a href="http://history18.eastus.azurecontainer.io">Home</a>
     <a href="#">Then This</a>
-    <a href="http://localhost:63342/internet-history/public_html/f-layout.html?_ijt=buo59rg8afm1dik5u6bmcm8vkv&_ij_reload=RELOAD_ON_SAVE">F Layout</a>
-    <a href="http://localhost:63342/internet-history/public_html/z-layout.html?_ijt=gcqc45g3mcbqb1vdujpp7pfcif&_ij_reload=RELOAD_ON_SAVE">Z Layout</a>
+    <a href="http://history18.eastus.azurecontainer.io/f-layout.html">F Layout</a>
+    <a href="http://history18.eastus.azurecontainer.io/z-layout.html">Z Layout</a>
 </div>
 <!-- Header -->
 <div class="hero-image">
@@ -182,7 +170,7 @@
         <div class="box">
             <h2>THE WEB</h2>
             <h4>Title description, Oct 21, 2021</h4>
-            <div class="webimg"><img src="images/web.jpg" alt="web tiles" width="425" height="345"></div>
+            <div class="webimg"><img src="../images/web.jpg" alt="web tiles" width="425" height="345"></div>
             <p>Some text..</p>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>

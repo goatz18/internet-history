@@ -2,9 +2,167 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About the internet</title>
+    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: rebeccapurple;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding-top: 35px;
+            padding-bottom: 1px;
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            background-color: rgba(70,10,92,0.85);
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            float: right;
+            padding: 14px 20px;
+            background: rgba(0,0,0,0.0);
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: rebeccapurple;
+            color: white;
+        }
+
+        .logo {
+            color: white;
+            float: left;
+            padding: 21px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 3vw;
+            font-weight: bold;
+            position: absolute;
+        }
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0,0,0,0.0);
+            color: white;
+        }
+        .footer a:hover {
+            background-color: rebeccapurple;
+            color: white;
+        }
+        a:link, a:visited {
+            background-color: rgba(255,255,255,0.75);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            color: rebeccapurple;
+        }
+
+        a:hover, a:active {
+            background-color: white;
+            color: rebeccapurple;
+        }
+        .main-bottom {
+            flex:75%;
+            background-color: rgba(255,255,255,0.8);
+            color: rebeccapurple;
+            padding-left: 125px;
+            padding-right: 125px;
+            padding-bottom: 18px
+        }
+
+        p {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 45px;
+        }
+        h4 {
+            font-size: 38px;
+        }
+        h6 {
+            font-size: 50px;
+            margin: 0 0;
+            padding: 21px;
+        }
+        @media only screen and (max-width: 748px) {
+            .side {
+                width: 100%;
+            }
+            .main {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .row {
+                flex-direction: column;
+            }
+            .break {
+                height: 155px;
+            }
+        }
+        @media screen and (max-width: 828px) {
+            .logo {
+                font-size: 25px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+            .main-bottom {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+        @media screen and (min-width: 1100px) {
+            .logo {
+                font-size: 33px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            img {
+                vertical-align: text-bottom;
+            }
+        }
+    </style>
 </head>
 <body>
-
+<!-- Navigation Bar -->
+<div class="logo">History of the Internet</div>
+<div class="navbar">
+    <a href="http://history18.eastus.azurecontainer.io">Home</a>
+    <a href="http://history18.eastus.azurecontainer.io/about.html">About</a>
+</div>
+<!-- Header -->
+<div class="header">
+    <h1>About & Sources</h1>
+    <h3 style="margin-bottom: 42px">Behind the History of the Internet Project</h3>
+</div>
 </body>
-</html>
