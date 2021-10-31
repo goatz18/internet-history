@@ -39,21 +39,22 @@
             color: #E1F1FF;
         }
 
-        .hero-text button {
+        .hero-text a {
             border: none;
             outline: 0;
             display: inline-block;
-            padding: 12px 18px;
+            padding: 12px 19px;
             color: #E1F1FF;
             background-color: #0060A8;
             text-align: center;
-            font-size: 18px;
+            font-size: 21px;
             font-weight: bold;
             cursor: pointer;
-            margin: 26px;
+            z-index: 3;
+            margin: 30px;
         }
 
-        .hero-text button:hover {
+        .hero-text a:hover {
             background-color: #002A47;
             color: #E1F1FF;
         }
@@ -85,7 +86,7 @@
         .logo {
             color: #E1F1FF;
             float: left;
-            padding: 14px 20px;
+            padding: 21px 20px;
             text-decoration: none;
             text-align: center;
             font-size: 3vw;
@@ -96,14 +97,15 @@
 
         .row {
             display: table;
-            width: 100%;
+            clear: both;
         }
         /* Main column */
         .box {
+            float: left;
             width: 33.3%;
             padding: 50px;
-            color: white;
             display: table-cell;
+            color: #E1F1FF;
         }
 
         /* Fake image, just for this example */
@@ -123,7 +125,6 @@
         }
 
         a:link, a:visited {
-            padding: 10px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -155,19 +156,39 @@
             .hero-text {
                 transform: translate(-66%, -45%);
             }
+        }
+        @media screen and (max-width: 828px) {
             .logo {
-                font-size: 24px;
+                font-size: 25px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+        }
+        @media screen and (min-width: 1100px) {
+            .logo {
+                font-size: 33px;
             }
         }
 
         .break {
             width: 100%;
             height: 100px;
-            color: white;
+            color: #E1F1FF;
             background-color: rgba(0,0,0,0.4);
             vertical-align: center;
             font-size: 45px;
             text-align: center;
+        }
+        p {
+            font-size: 22px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        h4 {
+            font-size: 25px;
         }
 
     </style>
@@ -186,19 +207,28 @@
     <div class="hero-text">
         <h1 style="font-size:50px">One Strand at a Time</h1>
         <p style="font-size:25px">Many Small Contributions to One Big Web</p>
-        <button>What Started It All</button>
+        <a href="http://history18.eastus.azurecontainer.io/behindtheweb.html">What Started It All</a>
     </div>
 </div>
 <article style="background: rgba(0,0,0,0.6);"><!-- The flexible grid (content) -->
     <div class="break">
-        <p style="margin: 0;padding: 25px">World Wide Web Woven Strands</p>
+        <h5 style="margin: 0;padding: 29px">World Wide Web Woven Strands of History!</h5>
     </div>
     <div class="row">
         <div class="box">
-            <h2>THE WEB</h2>
-            <h4>Title description, Oct 21, 2021</h4>
-            <div class="webimg"><img alt="web tiles" class="responsive" height="345" src="images/web.jpg" width="425"></div>
-            <p>Some text..</p>
+            <h2>The Internet</h2>
+            <h4>Behind the Web</h4>
+            <div class="webimg">
+                <a href="http://history18.eastus.azurecontainer.io/behindtheweb.html"><img alt="web tiles" class="responsive" src="images/web.jpg"></a>
+            </div>
+            <p>What started it all...</p>
+            <p>The History Channel Special "The Internet: Behind The Web" summary of how the World Wide Web came to be.</p>
+        </div>
+        <div class="box">
+            <h2>TITLE HEADING</h2>
+            <h4>Title description, Oct 20, 2021</h4>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some Text...</p>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
         <div class="box">
@@ -208,19 +238,12 @@
             <p>Some text..</p>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
-        <div class="box">
-            <h2>TITLE HEADING</h2>
-            <h4>Title description, Oct 20, 2021</h4>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
     </div>
     <div class="row">
         <div class="box">
             <h2>THE WEB</h2>
             <h4>Title description, Oct 21, 2021</h4>
-            <div class="webimg"><img alt="web tiles" class="responsive" height="345" src="images/web.jpg" width="425"></div>
+            <div class="webimg"><img alt="web tiles" class="responsive" src="images/web.jpg"></div>
             <p>Some text..</p>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
@@ -246,6 +269,7 @@
     <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169</a>
     <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169</a>
     <a href="" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169</a>
+    <a href="http://history18.eastus.azurecontainer.io/sources.html" rel="nofollow" title="Ayush Deshpande Github">Sources</a>
     <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">W3C Validator</a>
 </div>
 </body>
