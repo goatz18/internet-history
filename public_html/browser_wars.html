@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-image: url("images/back.jpg");
+            background-color: white;
+            background-position: center top;
+            background-repeat: repeat-y;
+            background-size: contain;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding-top: 35px;
+            padding-bottom: 1px;
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            background-color: rgba(219,68,55,0.86);
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            float: right;
+            padding: 14px 20px;
+            background: rgba(0,0,0,0.0);
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: rgba(66,133,244,0.96);
+            color: indianred;
+        }
+
+        .logo {
+            color: white;
+            float: left;
+            padding: 21px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 3vw;
+            font-weight: bold;
+            position: absolute;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex:25%;
+            background-color: rgba(15,157,88,0.62);;
+            padding: 20px;
+            color: white;
+        }
+
+        /* Main column */
+        .main {
+            flex:75%;
+            background-color: rgba(255,255,255,0.8);
+            color: rebeccapurple;
+            text-align: left;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+        .footer a:hover {
+            background-color: white;
+            color: rgba(66,133,244,0.96);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(66,133,244,0.8);
+            color: #E1F1FF;
+            font-weight: bold;
+        }
+
+        a:link, a:visited {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+            padding: 6px 20px;
+            font-size: 20px;
+        }
+
+        a:hover, a:active {
+            background-color: #E1F1FF;
+            color: white;
+        }
+
+        /* Fake image, just for this example */
+        img {
+            background-color: rgba(255,255,255,0.0);
+            vertical-align: bottom;
+        }
+
+        .break {
+            width: 100%;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            margin: auto;
+            height: 100px;
+            background-color: rgba(244,160,0,0.96);
+        }
+
+        .main-bottom {
+            flex:75%;
+            background-color: rgba(255,255,255,0.8);
+            color: rebeccapurple;
+            padding-left: 125px;
+            padding-right: 125px;
+            padding-bottom: 18px
+        }
+
+        p {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 45px;
+        }
+        h4 {
+            font-size: 38px;
+        }
+        h6 {
+            font-size: 50px;
+            margin: 0 0;
+            padding: 21px;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media only screen and (max-width: 748px) {
+            .side {
+                width: 100%;
+            }
+            .main {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .row {
+                flex-direction: column;
+            }
+            .break {
+                height: 155px;
+            }
+        }
+        @media screen and (max-width: 828px) {
+            .logo {
+                font-size: 25px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+            .main-bottom {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+        @media screen and (min-width: 1100px) {
+            .logo {
+                font-size: 33px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            img {
+                vertical-align: text-bottom;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">History of the Internet</div>
+<div class="navbar">
+    <a href="http://history18.eastus.azurecontainer.io">Home</a>
+    <a href="http://history18.eastus.azurecontainer.io/about.html">About</a>
+</div>
+<!-- Header -->
+<div class="header">
+    <h1>True Story of The Internet</h1>
+    <h3 style="margin-bottom: 42px">Browser Wars</h3>
+</div>
+<article>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2 style="font-size: 48px;margin-top: 0;text-align: center;padding-top: 19px">Marc Andreessen</h2>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Mosaic</h4>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Microsoft</h4>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Overture</h4>
+            <p style="padding-left: 25px;padding-right: 25px">Not as popular as Yahoo and excite, Overture did however come up with the idea to sell search result order to companies.</p>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Google</h4>
+            <p style="padding-left: 25px;padding-right: 25px">Google came along and fused Overture.com's idea with a new way to search that brought up better results than Yahoo and excite.</p>
+        </div>
+        <div class="main">
+            <h2>Start of War</h2>
+            <h4>Hustle</h4>
+            <p>
+            <img src="images/browser.1.jpeg" height="183" width="275" alt="Microsoft"
+                 style="float: right; margin:3px 12px 3px;">
+            </p>
+            <p>
+                In the early 1990s, the Web was simply a research network that consisted of a few web pages that
+                consisted of numerous lines of text. The internet was for academics, researchers, and scientists. It was
+                very useful to those that were using it, but not everyone had the knowledge to use it. That is when Marc Andreessen decided to make the web
+                easier to use by adding audio and visual capabilities to browsing the internet. The product of their
+                efforts became the world’s first graphical point-and-click web browser, Mosaic.
+                Andreessen and his colleagues made their software available to the public for free. At that point, the
+                internet was no longer an exclusive platform for scientists and programmers, but rather a platform for
+                the world. The only thing that Andreessen needed to make a global impact was money.
+            </p>
+            <h2>Fight for Survival</h2>
+            <h4>It's All About the Winning</h4>
+            <p>
+                At around the same time, Microsoft and
+                Bill Gates were tightening their grip on the Web
+                and computer
+                industry. While the world viewed the internet as a wide-open road with no horizon, Bill Gates and
+                Microsoft believed that access to the vast information on the internet should be controlled through the
+                Microsoft Network. However, time would prove that things would not be that easy for Microsoft and Bill
+                Gates. That is when  Jim Clark reached out
+                to Andreessen and his colleagues to found what would be the fastest-growing software company the world
+                has ever seen, Netscape Communications. The plan
+                was to take Mosaic to the next level, and build a browser that was more powerful and dominant. Netscape
+                perceived Microsoft as their only competition, and their new browser launched publicly under the name of
+                 Navigator.
+            </p>
+
+
+
+            <h2>Navigator</h2>
+            <h4>Who will win</h4>
+
+
+
+        </div>
+    </div>
+
+    <div class="break">
+        <h6>
+            Hook or Crook
+        </h6>
+    </div>
+
+    <div class="row">
+        <div class="main-bottom">
+            <h4>Internet Explorer</h4>
+            <p>
+                Navigator was an instant success when 90% of the people that were using Mosaic instantly switched over
+                to Navigator. Bill Gates and his elves were shocked and worried. Bill Gates realized the need to rectify
+                his position and decided to go head to head with Netscape and declared a <i>Browser War</i>. After both
+                companies failed to agree to work together, Netscape decided to go public as a company and officially
+                became the fastest growing software company on the market. The war between the two companies was public
+                and Andreessen was bad-mouthing Microsoft and Bill Gates on the media. So in 1995, Microsoft answered
+                back and published a web browser of their own,
+                    Internet Explorer.
+            </p>
+        </div>
+    </div>
+
+</article>
+<!-- Footer -->
+<!-- Footer -->
+<div class="footer">
+    <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169;</a>
+    <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169;</a>
+    <a href="https://github.com/aad84/internet-history.git" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169;</a>
+    <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" src="images/w3cicon.png" style="padding: 0"></a>
+</div>
+</body>
+</html>
