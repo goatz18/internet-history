@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-image: url("images/back.jpg");
+      background-color: white;
+      background-position: center top;
+      background-repeat: repeat-y;
+      background-size: contain;
+    }
+
+    /* Header/logo Title */
+    .header {
+      padding-top: 35px;
+      padding-bottom: 1px;
+      text-align: center;
+      color: white;
+      font-size: 35px;
+      background-color: rgba(70,10,92,0.85);
+    }
+
+    /* Style the top navigation bar */
+    .navbar {
+      display: flex;
+      float: right;
+      padding: 14px 20px;
+      background: rgba(0,0,0,0.0);
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: white;
+      color: rebeccapurple;
+    }
+
+    .logo {
+      color: white;
+      float: left;
+      padding: 21px 20px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 3vw;
+      font-weight: bold;
+      position: absolute;
+    }
+
+    /* Column container */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      flex:25%;
+      background-color: rgba(70,10,92,0.75);
+      padding: 20px;
+      color: white;
+    }
+
+    /* Main column */
+    .main {
+      flex:75%;
+      background-color: rgba(255,255,255,0.8);
+      color: rebeccapurple;
+      text-align: left;
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+
+    .responsive {
+      width: 100%;
+      max-width: 510px;
+      height: auto;
+    }
+    .footer a:hover {
+      background-color: white;
+      color: rgba(70,10,92,0.75);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: rgba(70,10,92,0.75);
+      color: #E1F1FF;
+      font-weight: bold;
+    }
+
+    a:link, a:visited {
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      color: #E1F1FF;
+      padding: 6px 20px;
+      font-size: 20px;
+    }
+
+    a:hover, a:active {
+      background-color: #E1F1FF;
+      color: #0060A8;
+    }
+
+    /* image, just for this example */
+    img {
+      vertical-align:bottom
+    }
+
+
+
+
+
+    p {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 45px;
+    }
+    h4 {
+      font-size: 38px;
+    }
+    h6 {
+      font-size: 50px;
+      margin: 0 0;
+      padding: 21px;
+    }
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media only screen and (max-width: 748px) {
+      .side {
+        width: 100%;
+      }
+      .main {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .row {
+        flex-direction: column;
+      }
+
+    }
+    @media screen and (max-width: 828px) {
+      .logo {
+        font-size: 25px;
+      }
+
+      .navbar {
+        flex-direction: column;
+      }
+
+    }
+    @media screen and (min-width: 1100px) {
+      .logo {
+        font-size: 33px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      img {
+        vertical-align: text-bottom;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">History of the Internet</div>
+<div class="navbar">
+  <a href="http://history18.eastus.azurecontainer.io">Home</a>
+  <a href="http://history18.eastus.azurecontainer.io/about.html">About</a>
+</div>
+<!-- Header -->
+<div class="header">
+  <h1>The Internet</h1>
+  <h3 style="margin-bottom: 42px">Important People</h3>
+</div>
+<article>
+  <!-- The flexible grid (content) -->
+  <div class="row">
+    <div class="side">
+      <h2 style="font-size: 42px;margin-top: 0;text-align: center;padding-top: 19px">Novel Faces</h2>
+      <h4 style="margin-bottom: 20px;text-align: center">The Start</h4>
+      <img alt="imp" class="responsive" src="images/imp_people.1.jpeg" style="float:right;clear:right;padding: 20px 20px 35px 20px">
+      <p style="padding-left: 25px;padding-right: 25px">Important mavericks for the Web 2.0 were Chad Hurley, Kevin Rose, Jay Adelson, Shawn Fanning, Mark
+        Zuckerberg and Craig Newmark. </p>
+      <h4 style="margin-bottom: 20px;text-align: center">Web 2.0</h4>
+      <img alt="imp" class="responsive" src="images/imp_people.2.jpeg" style="float:right;clear:right;padding: 20px 20px 35px 20px;">
+      <p style="padding-left: 25px;padding-right: 25px">Web 2.0 was the new era of the internet and everyone knew it.
+    </div>
+    <div class="main">
+      <h2>The Begining</h2>
+      <p>
+        Important mavericks for the Web 2.0 were Chad Hurley, Kevin Rose, Jay Adelson, Shawn Fanning, Mark
+        Zuckerberg and Craig Newmark. The companies that were founded by these individuals include: Youtube,
+        Digg, Napster, Facebook and Craigslist. All these individuals were on a mission to change the way the
+        web was used and enable the people who use it with all the power.
+
+      </p>
+      <h2>Business Driven</h2>
+      <p>
+        Before things like Youtube, the traditional media companies would control who was able to be heard and
+        have an impact. With these new platforms the people were given the power to be heard. Most of these
+        companies were built off the theory, wisdom of crowds. This theory is the idea that large groups of
+        people are collectively smarter than individual experts when it comes to problem-solving, decision
+        making, innovating and predicting.
+      </p>
+      <h2>Origin of the Business</h2>
+
+      <p>
+        David Weekly and Justin Frankel were pioneers who put music and computers together to create the MP3
+        file. They created software to be able to play music through computers. This sparked the start of a new
+        revolution for the music industry. Shawn Fanning had an idea for a new company called Napstart which was
+        built off a peer to peer architecture for music. Within the first week of its existence in 1999, 10,000
+        people had downloaded Napster. It was the fastest spreading software during its time. Howard King and
+        Peter PAterno were american entertainment lawyers who showed musical artists how Napster was
+        redistributing their music for free which caused an uproar of lawsuits. Napster was finally shut down in
+        July 2001, but the internet had been changed forever.
+      </p>
+      <h2>Creating Dominance</h2>
+
+      <p>
+        At the end of 2006, Google had acquired Youtube because of how it threatened big media companies and the
+        potential it had. Youtube threatened big media companies because it allowed users to generate their own
+        content and express their creativity. Web 2.0 was the new era of the internet and everyone knew it.
+      </p>
+      <h2>Entry to the new World</h2>
+      <p>
+        Web 2.0 was really enhanced with the idea of social networking. Things like Friendster, Myspace, and
+        Facebook really boosted the internet for the user. The social graph was Facebook’s idea to web together
+        all of its users, the social graph is defined as a representation of the interconnection of
+        relationships in an online social network. Zuckerberg’s ambition is to turn Facebook into the windows of
+        the web. The internet has been changed forever because of the pioneers mentioned throughout this video!
+      </p>
+
+    </div>
+  </div>
+
+
+
+
+</article>
+<!-- Footer -->
+<div class="footer">
+  <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169;</a>
+  <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169;</a>
+  <a href="https://github.com/aad84/internet-history.git" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169;</a>
+  <a href="http://history18.eastus.azurecontainer.io/about.html" rel="nofollow" title="Ayush Deshpande Github">About & Sources</a>
+  <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" class="responsive" src="images/w3cicon.png" style="padding: 0"></a>
+</div>
+</body>
+</html>
