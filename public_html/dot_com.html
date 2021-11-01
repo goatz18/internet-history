@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-image: url("images/back.jpg");
+            background-color: white;
+            background-position: center top;
+            background-repeat: repeat-y;
+            background-size: contain;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding-top: 35px;
+            padding-bottom: 1px;
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            background-color: rgba(70,10,92,0.85);
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            float: right;
+            padding: 14px 20px;
+            background: rgba(0,0,0,0.0);
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: white;
+            color: rebeccapurple;
+        }
+
+        .logo {
+            color: white;
+            float: left;
+            padding: 21px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 3vw;
+            font-weight: bold;
+            position: absolute;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex:25%;
+            background-color: rgba(70,10,92,0.75);
+            padding: 20px;
+            color: white;
+        }
+
+        /* Main column */
+        .main {
+            flex:75%;
+            background-color: rgba(255,255,255,0.8);
+            color: rebeccapurple;
+            text-align: left;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+
+        .responsive {
+            width: 100%;
+            max-width: 510px;
+            height: auto;
+        }
+        .footer a:hover {
+            background-color: white;
+            color: rgba(70,10,92,0.75);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(70,10,92,0.75);
+            color: #E1F1FF;
+            font-weight: bold;
+        }
+
+        a:link, a:visited {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            color: #E1F1FF;
+            padding: 6px 20px;
+            font-size: 20px;
+        }
+
+        a:hover, a:active {
+            background-color: #E1F1FF;
+            color: #0060A8;
+        }
+
+        /* image, just for this example */
+        img {
+            vertical-align:bottom
+        }
+
+
+
+
+        p {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 45px;
+        }
+        h4 {
+            font-size: 38px;
+        }
+        h6 {
+            font-size: 50px;
+            margin: 0 0;
+            padding: 21px;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media only screen and (max-width: 748px) {
+            .side {
+                width: 100%;
+            }
+            .main {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .row {
+                flex-direction: column;
+            }
+
+        }
+        @media screen and (max-width: 828px) {
+            .logo {
+                font-size: 25px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+        }
+        @media screen and (min-width: 1100px) {
+            .logo {
+                font-size: 33px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            img {
+                vertical-align: text-bottom;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">History of the Internet</div>
+<div class="navbar">
+    <a href="http://history18.eastus.azurecontainer.io">Home</a>
+    <a href="http://history18.eastus.azurecontainer.io/about.html">About</a>
+</div>
+<!-- Header -->
+<div class="header">
+    <h1>The Internet</h1>
+    <h3 style="margin-bottom: 42px">Dot Com Bubble</h3>
+</div>
+<article>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2 style="font-size: 42px;margin-top: 0;text-align: center;padding-top: 19px">The Bomb</h2>
+            <h4 style="margin-bottom: 20px;text-align: center">The Start</h4>
+            <img alt="atomic" class="responsive" src="images/atomic.jpg" style="float:right;clear:right;padding: 20px 20px 35px 20px">
+            <p style="padding-left: 25px;padding-right: 25px">The age of ecommerce had been transformed with new technologies like eBay and Amazon.</p>
+
+        </div>
+        <div class="main">
+            <h2>Birth of Billionaire</h2>
+            <p>
+                The Dot Com Bubble, also known as the internet bubble, was a rapid rise in U.S. technology stock equity
+                valuations fueled by investments in internet-based companies during the bull market in the late 1990s.
+                The age of ecommerce had been transformed with new technologies like eBay and Amazon. Amazon was birthed
+                in a garage in Seattle by Jeff Bezos, who started out on Wall Street. Amazon was launched in summer of
+                1995 around the same time Pierre Omidayar was launching eBay, an auction site on the web.
+            </p>
+            <h2>Articulating the Strength</h2>
+            <p>
+                Measure of success was immediate for Amazon and eBay because they both were selling tons of items upon
+                release. Early success of these companies spread to Wall Street because the companies started putting up
+                great numbers quarter after quarter.
+                Upon the creation of the internet it took only 4 years before it had 50 millions users. This exponential
+                growth was attributed to two key factors, Moore’s Law & Metcalfe’s Law. Moore’s Law is defined as the
+                principle that the speed and capability of computers can be expected to double every two years, as a
+                result of increases in the number of transistors a microchip can contain. Metcalfe’s Law is defined as
+                the value of a telecommunications network is proportional to the square of the number of connected users
+                of the system.
+            </p>
+            <h2>The E-Commerce</h2>
+            <p>
+                In the 1990’s tons of internet companies (Yahoo, Excite, Amazon, etc) went public. Bezos followed the
+                mantra “get big fast” because it would allow them to help customers at a faster rate. Public key
+                cryptography was an instrumental creation during this time period because it allowed for secured
+                ecommerce. The public key infrastructure can be defined as a key cryptographic technology, which is
+                widely used in open network-based E-commerce systems. As a foundation for E-commerce security, it
+                enhances the security service functionalities, such as authentication, confidentiality, integrity, and
+                non-repudiation of the systems.
+            </p>
+            <h2>The Headlines</h2>
+            <p>
+                Meg Whitman was brought into eBay to show Wall Street that the company was legit company for them to
+                invest in. The day eBay launched, the price rocketed from $15 per share to $50 per share. Henry Blodget
+                said although Amazon was posting huge losses that the share prices would double, he issued a statement
+                saying the price would reach $400 in the next year. Amazon’s stock price doubled in a few short weeks
+                which would mark the start of the internet bubble. Blodget would later be banned by the SEC because
+                incriminating emails were found from him where he highlighted the mass amount of internet companies
+                going public were not good companies.
+            </p>
+
+            <h2>Fibre Optics</h2>
+            <p>
+                Fiber optics also contributed to the bubble because tons of telecommunication companies were attempting
+                to provide people with larger bandwidth to operate at quicker frequency. In 1999 the total amount of
+                internet companies to go public was 250, this was more than the previous high which was 30 companies in
+                1995.
+            </p>
+            <h2>The Indomitable </h2>
+            <p>
+                Wall Street believed the holiday season would bring huge gains to ecommerce companies, and when they
+                didn't they began to doubt the “get big fast” mindset that Jeff Bezos had been preaching. In April 2000
+                the internet economy brought the nasdaq to fall 355 points, known as black friday. Looking back at the
+                Dot Com Bubble people viewed it as a good thing because it paved the way for the internet being scaled
+                and expanded via better bandwidth.
+            </p>
+
+
+        </div>
+    </div>
+
+
+</article>
+<!-- Footer -->
+<div class="footer">
+    <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169;</a>
+    <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169;</a>
+    <a href="https://github.com/aad84/internet-history.git" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169;</a>
+    <a href="http://history18.eastus.azurecontainer.io/about.html" rel="nofollow" title="Ayush Deshpande Github">About & Sources</a>
+    <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" class="responsive" src="images/w3cicon.png" style="padding: 0"></a>
+</div>
+</body>
+</html>
