@@ -100,6 +100,11 @@
             display: table;
             clear: both;
         }
+        .row-two {
+            display: table;
+            clear: both;
+            padding: 0 300px 0 300px;
+        }
         /* Main column */
         .box {
             float: left;
@@ -109,12 +114,13 @@
             color: #E1F1FF;
             text-align: center;
         }
-
-        /* Fake image, just for this example */
-        .fakeimg {
-            background-color: #aaa;
-            width: 100%;
-            padding: 20px;
+        .box-two {
+            float: left;
+            width: 50%;
+            padding: 50px;
+            display: table-cell;
+            color: #E1F1FF;
+            text-align: center;
         }
 
         /* Footer */
@@ -142,7 +148,8 @@
 
         /* image, just for this example */
         img {
-            vertical-align:bottom
+            vertical-align:bottom;
+            padding: 10px;
         }
         .responsive {
             width: 100%;
@@ -162,11 +169,17 @@
             .box {
                 width: 100%;
             }
+            .box-two {
+                width: 100%;
+            }
             .navbar {
                 flex-direction: column;
             }
             .hero-text {
                 transform: translate(-66%, -45%);
+            }
+            .row-two {
+                padding: 0;
             }
         }
         @media screen and (max-width: 828px) {
@@ -227,7 +240,7 @@
         <div class="box">
             <h2>The True Story of The Internet</h2>
             <h4>Browser Wars</h4>
-            <a href="http://history18.eastus.azurecontainer.io/browserwars.html" style="padding: 0;"><img alt="web tiles" class="responsive" src="images/browser.jpg"></a>
+            <img alt="browser" class="responsive" src="images/browser.jpg">
             <p>Our Window To The Web</p>
             <p>
                 How Marc Anderson brought the world's first graphical web browser into being and how it sparked a war over Internet dominance.
@@ -236,59 +249,45 @@
         <div class="box">
             <h2>The True Story of The Internet</h2>
             <h4>Internet Search</h4>
-            <a href="http://history18.eastus.azurecontainer.io/search.html" style="padding: 0;"><img alt="web tiles" class="responsive" src="images/search.jpg"></a>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <a href="http://history18.eastus.azurecontainer.io/search.html" style="padding: 0;"><img alt="search" class="responsive" src="images/search.jpg"></a>
+            <p>Yahoo, Excite, Google, Oh My!</p>
+            <p>The early Internet was not easy to search. It was even harder to sustain dominance for search engines. Until...</p>
         </div>
     </div>
     <div class="row">
         <div class="box">
             <h2>The True Story of The Internet</h2>
             <h4>Dot Com Bubble</h4>
-            <div class="webimg"><img alt="web tiles" class="responsive" src="images/web.jpg"></div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
-        <div class="box">
-            <h2>The True Story of The Internet</h2>
-            <h4>People</h4>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <img alt="web tiles" class="responsive" src="images/dotcom.jpg">
+            <p>Unchecked Booms Only Have One Way To Go...</p>
+            <p>Eveyone tries to capitalize on the Dot Com Bubble, but for some, or most, it's too late.</p>
         </div>
         <div class="box">
             <h2>What is the Internet</h2>
-            <h4>Universal Standards</h4>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h4>What Powers The Internet</h4>
+            <a href="http://history18.eastus.azurecontainer.io/Whatistheinternet.html" style="padding: 0;"><img alt="power" class="responsive" src="images/power.jpg"></a>
+            <p>What is the Internet Today</p>
+        </div>
+        <div class="box">
+            <h2>Important People</h2>
+            <h4>Web Strand Inventors</h4>
+            <img style="height: 375px;width: 285px;" alt="power" class="responsive" src="images/internetpeople.jpg">
+            <p>Internet Forefathers</p>
+            <p>Who are the many contributors to what the Internet has come to be today?</p>
         </div>
     </div>
-    <div class="row">
-        <div class="box">
-            <h2>The Internet</h2>
-            <h4>Behind the Web</h4>
-            <a href="http://history18.eastus.azurecontainer.io/behindtheweb.html" style="padding: 0;"><img alt="web tiles" class="responsive" src="images/web.jpg"></a>
-            <p>What started it all...</p>
-            <p>
-                The History Channel Special "The Internet: Behind The Web" summary of how the World Wide Web came to be.
-            </p>
-        </div>
-        <div class="box">
-            <h2>The True Story of The Internet</h2>
-            <h4>Browser Wars</h4>
-            <a href="http://history18.eastus.azurecontainer.io/browserwars.html" style="padding: 0;"><img alt="web tiles" class="responsive" src="images/browser.jpg"></a>
-            <p>Our Window To The Web</p>
-            <p>
-                How Marc Anderson brought the world's first graphical web browser into being and how it sparked a war over Internet dominance.
-            </p>
-        </div>
-        <div class="box">
-            <h2>The True Story of The Internet</h2>
-            <h4>Internet Search</h4>
-            <a href="http://history18.eastus.azurecontainer.io/search.html" style="padding: 0;"><img alt="web tiles" class="responsive" src="images/search.jpg"></a>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <div class="row-two">
+        <div class="box-two">
+            <h2>Wires, Cables, & Wifi, Oh My!</h2>
+            <h4>DNS and How It Works</h4>
+            <a href="http://history18.eastus.azurecontainer.io/TheInternetCont.html" style="padding: 0;"><img alt="web tiles" class="responsive" src="images/wires.jpg"></a>
+            <p>We're All Connected, Seriously</p>
+            </div>
+        <div class="box-two">
+            <h2>Packets, Routing, & Reliability</h2>
+            <h4>The Information Superhighway</h4>
+            <a href="http://history18.eastus.azurecontainer.io/PacketsRoutingWifi.html" style="padding: 0;"><img alt="browser" class="responsive" src="images/superhighway.jpg"></a>
+            <p>How Information Today is Really Sent Over the Web</p>
         </div>
     </div>
 </article>
@@ -297,9 +296,9 @@
     <div class="footer">
         <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169;</a>
         <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169;</a>
-        <a href="" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169;</a>
+        <a href="https://github.com/aad84/internet-history.git" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169;</a>
         <a href="http://history18.eastus.azurecontainer.io/about.html" rel="nofollow" title="Ayush Deshpande Github">About & Sources</a>
-        <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" src="images/w3cicon.png"></a>
+        <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" class="responsive" src="images/w3cicon.png" style="padding: 0;float: bottom"></a>
     </div>
 </body>
 </html>

@@ -1,19 +1,19 @@
 # History of the Internet
 
 Jason W. Guerrieri:
-Home Page,
-Behind The Web,
-Internet Search,
+1. Home Page,
+2. Behind The Web,
+3. Internet Search,
 Sources
 
 Sehrish Saeed:
-What is/What Powers The Internet,
-Wires, Cables, Wifi/DNS,
-Packets, Routing, Reliability
+1. What is the Internet/What Powers The Internet,
+2. Wires, Cables, Wifi/DNS,
+3. Packets, Routing, Reliability
 
 Ayush Deshpande:
-Important People,
-Browser Wars,
-Dot Com Bubble
+1. Important People,
+2. Browser Wars,
+3. Dot Com Bubble
 
 [History of the Internet](http://history18.eastus.azurecontainer.io)

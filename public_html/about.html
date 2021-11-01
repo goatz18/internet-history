@@ -62,8 +62,9 @@
         }
         /* Column container */
         .row {
-            display: flex;
-            flex-wrap: wrap;
+            text-align: center;
+            color: white;
+            padding: 50px 300px 200px 300px;
         }
         /* Footer */
         .footer {
@@ -73,31 +74,22 @@
             color: white;
         }
         .footer a:hover {
-            background-color: rebeccapurple;
-            color: white;
+            background-color: white;
+            color: rebeccapurple;
         }
         a:link, a:visited {
-            background-color: rgba(255,255,255,0.75);
+            background-color: rgba(255,255,255,0.2);
             padding: 10px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            color: rebeccapurple;
+            color: white;
         }
 
         a:hover, a:active {
             background-color: white;
             color: rebeccapurple;
         }
-        .main-bottom {
-            flex:75%;
-            background-color: rgba(255,255,255,0.8);
-            color: rebeccapurple;
-            padding-left: 125px;
-            padding-right: 125px;
-            padding-bottom: 18px
-        }
-
         p {
             font-size: 30px;
         }
@@ -112,45 +104,19 @@
             margin: 0 0;
             padding: 21px;
         }
+        ul.a {
+            list-style-position: inside;
+            font-size: 30px;
+        }
         @media only screen and (max-width: 748px) {
-            .side {
-                width: 100%;
-            }
-            .main {
-                width: 100%;
-                padding-left: 50px;
-                padding-right: 50px;
-            }
             .row {
                 flex-direction: column;
-            }
-            .break {
-                height: 155px;
+                text-align: left;
+                width: 100%;
+                padding: 30px;
             }
         }
-        @media screen and (max-width: 828px) {
-            .logo {
-                font-size: 25px;
-            }
 
-            .navbar {
-                flex-direction: column;
-            }
-            .main-bottom {
-                padding-left: 50px;
-                padding-right: 50px;
-            }
-        }
-        @media screen and (min-width: 1100px) {
-            .logo {
-                font-size: 33px;
-            }
-        }
-        @media screen and (max-width: 600px) {
-            img {
-                vertical-align: text-bottom;
-            }
-        }
     </style>
 </head>
 <body>
@@ -163,6 +129,37 @@
 <!-- Header -->
 <div class="header">
     <h1>About & Sources</h1>
-    <h3 style="margin-bottom: 42px">Behind the History of the Internet Project</h3>
+    <h3 style="margin-bottom: 42px;padding-left: 30px;padding-right: 30px">Behind the History of the Internet Project</h3>
+</div>
+<div class="row">
+    <h4>Jason Guerrieri</h4>
+    <ul class="a">
+        <li>Home Page</li>
+        <li>The Internet: Behind The Web</li>
+        <li>True Story of The Internet: Internet Search</li>
+    </ul>
+    <h4>Sehrish Saeed</h4>
+    <ul class="a">
+        <li>What is the Internet/What Powers The Internet</li>
+        <li>Wires, Cables, Wifi/DNS</li>
+        <li>Packets, Routing, Reliability</li>
+    </ul>
+    <h4>Ayush Deshpande</h4>
+    <ul class="a">
+        <li>Important People</li>
+        <li>Browser Wars</li>
+        <li>Dot Com Bubble</li>
+    </ul>
+    <br><br>
+    <h2>Photo Credits:</h2>
+    <a href="https://upload.wikimedia.org/wikipedia/commons/f/fc/Trinity_Detonation_T%26B.jpg">https://upload.wikimedia.org/wikipedia/commons/f/fc/Trinity_Detonation_T%26B.jpg</a>
+    <a href="https://upload.wikimedia.org/wikipedia/commons/c/ce/DARPA_Logo_2010.png">https://upload.wikimedia.org/wikipedia/commons/c/ce/DARPA_Logo_2010.png</a>
+</div><br><br><br>
+<div class="footer">
+    <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169;</a>
+    <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169;</a>
+    <a href="https://github.com/aad84/internet-history.git" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169;</a>
+    <a href="http://history18.eastus.azurecontainer.io/about.html" rel="nofollow" title="Ayush Deshpande Github">About & Sources</a>
+    <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" class="responsive" src="images/w3cicon.png" style="padding: 0;float: bottom"></a>
 </div>
 </body>
