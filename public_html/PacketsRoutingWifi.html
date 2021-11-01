@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-image: url("images/bwar.jpg");
+            background-color: white;
+            background-position: center top;
+            background-repeat: repeat-y;
+            background-size: contain;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding-top: 35px;
+            padding-bottom: 1px;
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            background-color: rgba(0,135,232,0.85);
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            float: right;
+            padding: 14px 20px;
+            background: rgba(0,0,0,0.0);
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            color: rgba(0,135,232,1);
+        }
+
+        .logo {
+            color: white;
+            float: left;
+            padding: 21px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 3vw;
+            font-weight: bold;
+            position: absolute;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex:25%;
+            background-color: rgba(0,135,232,0.65);
+            padding: 20px;
+            color: white;
+        }
+
+        /* Main column */
+        .main {
+            flex:75%;
+            background-color: rgba(255,255,255,0.8);
+            color: rgba(0,135,232,1);
+            text-align: left;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0,0,0,0.0);
+            color: white;
+        }
+        .footer a:hover {
+            background-color: rgba(0,135,232,1);
+            color: white;
+        }
+        .responsive {
+            width: 100%;
+            max-width: 510px;
+            height: auto;
+        }
+
+        a:link, a:visited {
+            background-color: rgba(255,255,255,0.75);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            color: rgba(0,135,232,1);
+        }
+
+        a:hover, a:active {
+            background-color: white;
+            color: rgba(0,135,232,1);
+        }
+
+        /* Fake image, just for this example */
+        img {
+            background-color: rgba(255,255,255,0.0);
+            padding: 20px;
+        }
+
+        .break {
+            width: 100%;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            margin: auto;
+            height: 100px;
+            background-color: rgba(0,135,232,0.65);
+        }
+
+        .main-bottom {
+            flex:75%;
+            background-color: rgba(255,255,255,0.8);
+            color: rgba(0,135,232,1);
+            padding-left: 125px;
+            padding-right: 125px;
+            padding-bottom: 18px
+        }
+
+        p {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 45px;
+        }
+        h4 {
+            font-size: 38px;
+        }
+        h6 {
+            font-size: 50px;
+            margin: 0 0;
+            padding: 21px;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media only screen and (max-width: 748px) {
+            .side {
+                width: 100%;
+            }
+            .main {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .row {
+                flex-direction: column;
+            }
+            .break {
+                height: 155px;
+            }
+        }
+        @media screen and (max-width: 828px) {
+            .logo {
+                font-size: 25px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+            .main-bottom {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+        @media screen and (min-width: 1100px) {
+            .logo {
+                font-size: 33px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            img {
+                vertical-align: text-bottom;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">History of the Internet</div>
+<div class="navbar">
+    <a href="http://history18.eastus.azurecontainer.io">Home</a>
+    <a href="http://history18.eastus.azurecontainer.io/about.html">About</a>
+</div>
+<!-- Header -->
+<div class="header">
+    <h1>Packets, Routing, & Reliability</h1>
+    <h3 style="margin-bottom: 42px">What are they?</h3>
+</div>
+<article>
+    <!-- The flexible grid (content) -->
+
+    <div class="row">
+        <div class="side">
+            <h2 style="font-size: 42px;margin-top: 0;text-align: center;padding-top: 19px">The Internet</h2>
+            <img alt="atomic" class="responsive" src="images/atomic.jpg" style="float:right;clear:right;padding-bottom: 35px;">
+            <h4 style="margin-bottom: 20px;text-align: center">Public Keys</h4>
+            </p>Public Keys
+            Public keys are used to encrypt data by anyone, but a private key can only be decrypted by a computer that has access.
+            Public key cryptography is the foundation of all secure messaging on the internet. Secure Sockets Layer and Transport
+            Layer Security and types of security protocols that protect users when browsing the web. The “lock” or https means that
+            the computer is using public key encryption to transfer data.</p>
+
+            <img alt="switch" class="responsive" src="images/switchboard.jpg" style="float:right;clear:right;padding-bottom: 35px;">
+            <p style="padding-left: 25px;padding-right: 25px">
+        </div>
+        <div class="main">
+            <img alt="darpa" class="responsive" src="images/darpa.png" style="float:right;clear:both;max-height: 225px;width: auto">
+            <h2></h2>
+            <h4></h4>
+            <p>The amount of information on the internet is very vast. Due to this, data does not travel in a direct fashion.
+                In order to provide reliable connections between data and the user, data travels on the internet in a less direct way.
+                Vint Cerf, who is the co-creator of the internet designed the internet’s protocols and architecture. Information gets
+                transferred from one computer to another through “packets”. A good example is when an image is too large to be sent
+                through one packet and needs to be divided into smaller parts. Packets have the internet address of where they came
+                from and where they are going.</p>
+
+            </p>
+            <h2>Routing</h2>
+            <h4></h4>
+            <p>
+            </p> VRouters act as traffic monitors to make sure that packets are moving smoothly throughout the different routes.
+            If one route is congested, then other packets will take different routes and arrive at different times or out
+            of order. Packets choose the cheapest available path to get to the correct internet IP address. Cheapest in this
+            case, means time, politics, and relationships between companies. Different paths create fault tolerance and leads to reliability.</p>
+            </p>
+        </div>
+        </p>
+        <h2></h2>
+        <h4></h4>
+        <p>
+        </p>
+        <h2>P</h2>
+        <h4></h4>
+        <p>
+        </p>
+        <h2>
+        </h2>
+        <h4>
+        </h4>
+
+    </div>
+    </div>
+
+    <div class="break">
+        <h6>
+            And more...
+        </h6>
+    </div>
+
+    <div class="row">
+        <div class="main-bottom">
+            <h4>Reliability</h4>
+            <p>
+                Transmission Control Protocol, better known as TCP, manages the sending the receiving of packets. It’s similar
+                to a mail service. If there are packets that are missing, TCP does not approve the file, and this could result in the song
+                sounding different or off. TCP and router systems are scalable, they can run on 8 or 8 billion devices. The more routers
+                there are, then the more reliable the internet becomes.</p>
+            </p>
+            <h4></h4>
+            <p>
+            </p>
+            <h4></h4>
+            <p>
+            </p>
+        </div>
+    </div>
+
+    <div class="break">
+        <h6>
+        </h6>
+    </div>
+
+    <div class="row">
+        <div class="main-bottom">
+            <h2></h2>
+            <h4></h4>
+            <p>
+            </p>
+            <p>
+            </p>
+            <h2></h2>
+            <h4></h4>
+            <p>
+            </p>
+            <h2></h2>
+            <h4></h4>
+            <h2></h2>
+            <h4></h4>
+            <p>
+            </p>
+            <h2></h2>
+            <h4></h4>
+            <p>
+            </p>
+        </div>
+    </div>
+
+    <div class="break">
+        <h6>
+        </h6>
+    </div>
+
+    <div class="row">
+        <div class="main-bottom">
+            <h2></h2>
+            <h4></h4>
+            <p>
+            </p>
+            <h2></h2>
+            <h4></h4>
+            <p>
+            </p>
+            <h2></h2>
+            <h4></h4>
+            <p>
+            </p>
+            <p>
+            </p>
+        </div>
+    </div>
+
+</article>
+<!-- Footer -->
+<div class="footer">
+    <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169</a>
+    <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169</a>
+    <a href="" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169</a>
+    <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">W3C Validator</a>
+</div>
+</body>
+</html>
