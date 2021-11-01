@@ -4,7 +4,7 @@ Jason W. Guerrieri:
 1. Home Page
 2. Behind The Web
 3. Internet Search
-4. About &Sources
+4. About & Sources
 
 Sehrish Saeed:
 1. What is the Internet/What Powers The Internet
