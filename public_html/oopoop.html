@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Oriented Programming Principles</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-image: url("images/python.jpg");
+            background-color: lightgoldenrodyellow;
+            background-position: center top;
+            background-repeat: repeat-y;
+            background-size: contain;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding-top: 35px;
+            padding-bottom: 1px;
+            text-align: center;
+            color: lightgoldenrodyellow;
+            font-size: 35px;
+            background-color: rgba(98,155,224,0.55);
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            float: right;
+            padding: 14px 20px;
+            background: rgba(0,0,0,0.0);
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: lightgoldenrodyellow;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: lightgoldenrodyellow;
+            color: black;
+        }
+
+        .logo {
+            color: lightgoldenrodyellow;
+            float: left;
+            padding: 21px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 3vw;
+            font-weight: bold;
+            position: absolute;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex:25%;
+            background-color: rgba(98,155,224,0.7);
+            padding: 20px;
+            color: lightgoldenrodyellow;
+        }
+
+        /* Main column */
+        .main {
+            flex:75%;
+            background-color: rgba(239,239,210,0.3);
+            color: lightgoldenrodyellow;
+            text-align: left;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+        .footer a:hover {
+            background-color: white;
+            color: rgba(98,155,224,0.7);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(98,155,224,0.7);
+            color: #E1F1FF;
+            font-weight: bold;
+        }
+
+        a:link, a:visited {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            color: lightgoldenrodyellow;
+            padding: 6px 20px;
+            font-size: 20px;
+        }
+
+        a:hover, a:active {
+            background-color: #E1F1FF;
+            color: white;
+        }
+
+        /* Fake image, just for this example */
+        img {
+            background-color: rgba(255,255,255,0.0);
+            vertical-align: bottom;
+        }
+
+        .break {
+            width: 100%;
+            font-size: 50px;
+            text-align: center;
+            color: lightgoldenrodyellow;
+            margin: auto;
+            height: 100px;
+            background-color: rgba(98,155,224,0.55);
+        }
+
+        .main-bottom {
+            flex:75%;
+            background-color: rgba(239,239,210,0.3);
+            color: lightgoldenrodyellow;
+            padding-left: 125px;
+            padding-right: 125px;
+            padding-bottom: 18px
+        }
+        .outline {
+            color: black;
+            -webkit-text-fill-color: lightgoldenrodyellow;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+
+        p {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 45px;
+        }
+        h4 {
+            font-size: 38px;
+        }
+        h6 {
+            font-size: 50px;
+            margin: 0 0;
+            padding: 21px;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media only screen and (max-width: 748px) {
+            .side {
+                width: 100%;
+            }
+            .main {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .row {
+                flex-direction: column;
+            }
+            .break {
+                height: 155px;
+            }
+        }
+        @media screen and (max-width: 828px) {
+            .logo {
+                font-size: 25px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+            .main-bottom {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+        @media screen and (min-width: 1100px) {
+            .logo {
+                font-size: 33px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            img {
+                vertical-align: text-bottom;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">Object Oriented Programming</div>
+<div class="navbar">
+    <a href="http://history18.eastus.azurecontainer.io">Home</a>
+    <a href="http://history18.eastus.azurecontainer.io/about.html">About</a>
+</div>
+<!-- Header -->
+<div class="header"><br>
+    <h1>Object Oriented Programming</h1>
+    <h3 style="margin-bottom: 42px">Principles: Calculator Program Examples</h3>
+</div>
+<article>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2 style="font-size: 48px;margin-top: 0;text-align: center;padding-top: 19px">Fundamental Concepts</h2>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Encapsulation</h4>
+            <p style="padding-left: 25px;padding-right: 25px">Encapsulation describes the idea of wrapping data and all the methods that work on said data, within one unit.</p>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Inheritance</h4>
+            <p style="padding-left: 25px;padding-right: 25px">Inheritance is the capability of one class to derive or inherit properties from another class</p>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Polymorphism</h4>
+            <p style="padding-left: 25px;padding-right: 25px">Polymorphism the word means having many forms. In programming, polymorphism means having the same function name (but different signatures) being used for different types.</p>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Abstraction</h4>
+            <p style="padding-left: 25px;padding-right: 25px">Abstract classes can be considered as blueprints for other classes. It allows a set of methods to be created within child classes that are built from the abstract class. A class with one or more abstract methods is an abstract class.</p>
+        </div>
+        <div class="main"><br>
+            <h6 style="text-align: center">Encapsulation</h6>
+            <p>
+                Yahoo is founded by Jerry Yang and David Filo, and they started to categorize the World Wide Web, allowing it to be searchable. They controversially put up banner ads in 1995 to generate revenue, and the number of users still went up.
+            </P>
+            <p>
+                Excite similarly had an automated keyword search engine. These two companies were in a battle for search space. They started to add non-search features to compete, and search engine quality suffered.
+            </p>
+            <h2>Google It</h2>
+            <h4>It's All About the Links.</h4>
+            <p>
+                Google was founded by Larry Page and Sergey Brin in 1998. They combined keyword search with the number of links that a website has from other sites, in other words gauging its Internet "popularity" and usefulness.
+            </p>
+            <h2>Overture.com</h2>
+            <h4>Who Needs Banner Ads</h4>
+            <p>
+                Overture.com was the first to introduce targeted ad results and to sell ad space to companies in order to get their results to be higher on the list of certain keyword searches.
+            </p>
+        </div>
+    </div>
+
+    <div class="break">
+        <h6>
+            Inheritance
+        </h6>
+    </div>
+
+    <div class="row">
+        <div class="main-bottom">
+            <h4>Google Refuses Banner Ads</h4>
+            <p>
+                Google insists on keeping it's page simple, and banner free. It's search engine based on link usefulness is innovative, but they need a way to generate revenue. Venture capitalists investing in Google apply pressure to find a revenue source.
+            </p>
+            <h4>Can A Deal Be Made</h4>
+            <p>
+                Google and Overture.com are brought together to make a deal. It's not truly known what happens, but nothing comes of it. Although, Google does go ahead with it's own targeted ad results engine which effectively copies Overture.com. Overture then sues Google and wins an unknown settlement. Overture.com founder Bill Gross obtains an undisclosed amount of Google stock.
+            </p>
+            <h4>Google IPO To The Moon</h4>
+            <p>
+                Google launches it's IPO in 2004, after the dot com bubble and still does well. The stock remained a high growth stock up to even today. Their combination of keyword, link popularity, and targeted ad results, have allowed them to expand into the juggernaut of today.
+            </p>
+        </div>
+    </div>
+
+    <div class="break">
+        <h6>
+            Polymorphism
+        </h6>
+    </div>
+
+    <div class="row">
+        <div class="main-bottom">
+            <h4>Google Refuses Banner Ads</h4>
+            <p>
+                Google insists on keeping it's page simple, and banner free. It's search engine based on link usefulness is innovative, but they need a way to generate revenue. Venture capitalists investing in Google apply pressure to find a revenue source.
+            </p>
+            <h4>Can A Deal Be Made</h4>
+            <p>
+                Google and Overture.com are brought together to make a deal. It's not truly known what happens, but nothing comes of it. Although, Google does go ahead with it's own targeted ad results engine which effectively copies Overture.com. Overture then sues Google and wins an unknown settlement. Overture.com founder Bill Gross obtains an undisclosed amount of Google stock.
+            </p>
+            <h4>Google IPO To The Moon</h4>
+            <p>
+                Google launches it's IPO in 2004, after the dot com bubble and still does well. The stock remained a high growth stock up to even today. Their combination of keyword, link popularity, and targeted ad results, have allowed them to expand into the juggernaut of today.
+            </p>
+        </div>
+    </div>
+
+    <div class="break">
+        <h6>
+            Abstraction
+        </h6>
+    </div>
+
+    <div class="row">
+        <div class="main-bottom">
+            <h4>Google Refuses Banner Ads</h4>
+            <p>
+                Google insists on keeping it's page simple, and banner free. It's search engine based on link usefulness is innovative, but they need a way to generate revenue. Venture capitalists investing in Google apply pressure to find a revenue source.
+            </p>
+            <h4>Can A Deal Be Made</h4>
+            <p>
+                Google and Overture.com are brought together to make a deal. It's not truly known what happens, but nothing comes of it. Although, Google does go ahead with it's own targeted ad results engine which effectively copies Overture.com. Overture then sues Google and wins an unknown settlement. Overture.com founder Bill Gross obtains an undisclosed amount of Google stock.
+            </p>
+            <h4>Google IPO To The Moon</h4>
+            <p>
+                Google launches it's IPO in 2004, after the dot com bubble and still does well. The stock remained a high growth stock up to even today. Their combination of keyword, link popularity, and targeted ad results, have allowed them to expand into the juggernaut of today.
+            </p>
+        </div>
+    </div>
+
+</article>
+<!-- Footer -->
+<!-- Footer -->
+<div class="footer">
+    <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169;</a>
+    <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" src="images/w3cicon.png" style="padding: 0"></a>
+</div>
+</body>
+</html>
