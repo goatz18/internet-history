@@ -122,7 +122,10 @@
             background-color: rgba(255,255,255,0.0);
             vertical-align: bottom;
         }
-
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
         .break {
             width: 100%;
             font-size: 50px;
@@ -141,13 +144,6 @@
             padding-right: 125px;
             padding-bottom: 18px
         }
-        .outline {
-            color: black;
-            -webkit-text-fill-color: lightgoldenrodyellow;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: black;
-        }
-
         p {
             font-size: 30px;
         }
@@ -233,22 +229,19 @@
         </div>
         <div class="main"><br>
             <h6 style="text-align: center">Encapsulation</h6>
+            <h2>Protected Members</h2>
             <p>
-                Yahoo is founded by Jerry Yang and David Filo, and they started to categorize the World Wide Web, allowing it to be searchable. They controversially put up banner ads in 1995 to generate revenue, and the number of users still went up.
+                Protected members are the members of a class that exist and can only be accessed only from within a certain class and it's subclasses. In Python, this is accomplished by following a convention of prefixing the name of the member by a single underscore "_".
             </P>
+            <h2>Private Members</h2>
             <p>
-                Excite similarly had an automated keyword search engine. These two companies were in a battle for search space. They started to add non-search features to compete, and search engine quality suffered.
+                Private members, although similar to protected members, differ in that they are neither accessed outside of their class nor by any base class. In Python, private members can only be accessed inside of a class. Private memebers are defined by a prefix of a double underscore "__".
             </p>
-            <h2>Google It</h2>
-            <h4>It's All About the Links.</h4>
             <p>
-                Google was founded by Larry Page and Sergey Brin in 1998. They combined keyword search with the number of links that a website has from other sites, in other words gauging its Internet "popularity" and usefulness.
+                This is accomplished in the calculator program as shown below. The values used to perform calculations are getting run through a constructor which returns all values back as float values.
             </p>
-            <h2>Overture.com</h2>
-            <h4>Who Needs Banner Ads</h4>
-            <p>
-                Overture.com was the first to introduce targeted ad results and to sell ad space to companies in order to get their results to be higher on the list of certain keyword searches.
-            </p>
+            <img alt="encapsulation" class="responsive" src="images/encapsulation.png" style="padding: 20px">
+
         </div>
     </div>
 
@@ -260,18 +253,22 @@
 
     <div class="row">
         <div class="main-bottom">
-            <h4>Google Refuses Banner Ads</h4>
+            <h4>The Benefits of Inheritance</h4>
             <p>
-                Google insists on keeping it's page simple, and banner free. It's search engine based on link usefulness is innovative, but they need a way to generate revenue. Venture capitalists investing in Google apply pressure to find a revenue source.
+                1. It represents real-world relationships well.<br>
+                2. It provides reusability of a code. We don’t have to write the same code again and again. Also, it allows us to add more features to a class without modifying it.<br>
+                3. It is transitive in nature, which means that if class B inherits from another class A, then all the subclasses of B would automatically inherit from class A.
             </p>
-            <h4>Can A Deal Be Made</h4>
+            <h4>Calculator Examples</h4>
             <p>
-                Google and Overture.com are brought together to make a deal. It's not truly known what happens, but nothing comes of it. Although, Google does go ahead with it's own targeted ad results engine which effectively copies Overture.com. Overture then sues Google and wins an unknown settlement. Overture.com founder Bill Gross obtains an undisclosed amount of Google stock.
+                The calculation class is the base/super/parent class and the addition, subtraction, multiplication, and division classes are the inherited/sub/child classes. Here is an example of the parent class "Calculation" and the child class "Addition(Calculation)":
             </p>
-            <h4>Google IPO To The Moon</h4>
+            <img alt="parent" class="responsive" src="images/inheritancebase.png" style="padding: 20px">
+            <img alt="child" class="responsive" src="images/inheritancesub.png" style="padding: 20px">
             <p>
-                Google launches it's IPO in 2004, after the dot com bubble and still does well. The stock remained a high growth stock up to even today. Their combination of keyword, link popularity, and targeted ad results, have allowed them to expand into the juggernaut of today.
+                That was also an example of "Single Inheritance." That is when there is one parent class that a child class inherits from.<br>
             </p>
+
         </div>
     </div>
 
@@ -283,18 +280,16 @@
 
     <div class="row">
         <div class="main-bottom">
-            <h4>Google Refuses Banner Ads</h4>
             <p>
-                Google insists on keeping it's page simple, and banner free. It's search engine based on link usefulness is innovative, but they need a way to generate revenue. Venture capitalists investing in Google apply pressure to find a revenue source.
+                In programming, polymorphism means that the same function name(s) (however different signatures) are being used for different types.
             </p>
-            <h4>Can A Deal Be Made</h4>
+            <h4>Calculator Example: User-Defined Polymorphic Functions</h4>
             <p>
-                Google and Overture.com are brought together to make a deal. It's not truly known what happens, but nothing comes of it. Although, Google does go ahead with it's own targeted ad results engine which effectively copies Overture.com. Overture then sues Google and wins an unknown settlement. Overture.com founder Bill Gross obtains an undisclosed amount of Google stock.
+                The "get_result" class method is used for all addition, subtraction, multiplication, and division child classes. For example, here is addition and subtraction child classes below:
             </p>
-            <h4>Google IPO To The Moon</h4>
-            <p>
-                Google launches it's IPO in 2004, after the dot com bubble and still does well. The stock remained a high growth stock up to even today. Their combination of keyword, link popularity, and targeted ad results, have allowed them to expand into the juggernaut of today.
-            </p>
+            <img alt="addition" class="responsive" src="images/inheritancesub.png" style="padding: 20px">
+            <img alt="addition" class="responsive" src="images/polymorphism.png" style="padding: 20px">
+
         </div>
     </div>
 
