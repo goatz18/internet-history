@@ -238,7 +238,7 @@
                 Private members, although similar to protected members, differ in that they are neither accessed outside of their class nor by any base class. In Python, private members can only be accessed inside of a class. Private memebers are defined by a prefix of a double underscore "__".
             </p>
             <p>
-                This is accomplished in the calculator program as shown below. The values used to perform calculations are getting run through a constructor which returns all values back as float values.
+                This is accomplished in the calculator program as shown below. The values used to perform calculations are getting run through a constructor under "__init__", which then uses a "staticmethod" and returns all values back as float values.
             </p>
             <img alt="encapsulation" class="responsive" src="images/encapsulation.png" style="padding: 20px">
 
@@ -280,6 +280,7 @@
 
     <div class="row">
         <div class="main-bottom">
+            <h4>Polymorphism in Python</h4>
             <p>
                 In programming, polymorphism means that the same function name(s) (however different signatures) are being used for different types.
             </p>
@@ -301,18 +302,14 @@
 
     <div class="row">
         <div class="main-bottom">
-            <h4>Google Refuses Banner Ads</h4>
+            <h4>Abstract Classes in Python</h4>
             <p>
-                Google insists on keeping it's page simple, and banner free. It's search engine based on link usefulness is innovative, but they need a way to generate revenue. Venture capitalists investing in Google apply pressure to find a revenue source.
+                An abstract class can be considered as a blueprint for other classes. It allows you to create a set of methods that must be created within any child classes that were built from that abstract class. Usually abstract classes require decorating as "abstractmethod", except when implemented through subclassing.
             </p>
-            <h4>Can A Deal Be Made</h4>
             <p>
-                Google and Overture.com are brought together to make a deal. It's not truly known what happens, but nothing comes of it. Although, Google does go ahead with it's own targeted ad results engine which effectively copies Overture.com. Overture then sues Google and wins an unknown settlement. Overture.com founder Bill Gross obtains an undisclosed amount of Google stock.
+                By subclassing from a base, we can avoid the need to register the class explicitly. In this case, the Python class management is used to recognize 'PluginImplementation' as implementing the abstract PluginBase. Here is a calculator example below using "from.abc.examplea.exampleb" and "import otherexample".
             </p>
-            <h4>Google IPO To The Moon</h4>
-            <p>
-                Google launches it's IPO in 2004, after the dot com bubble and still does well. The stock remained a high growth stock up to even today. Their combination of keyword, link popularity, and targeted ad results, have allowed them to expand into the juggernaut of today.
-            </p>
+            <img alt="abstract" class="responsive" src="images/abstract.png" style="padding: 20px">
         </div>
     </div>
 
