@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-image: url("images/back.jpg");
+            background-color: white;
+            background-position: center top;
+            background-repeat: repeat-y;
+            background-size: contain;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding-top: 35px;
+            padding-bottom: 1px;
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            background-color: rgba(70,10,92,0.85);
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            float: right;
+            padding: 14px 20px;
+            background: rgba(0,0,0,0.0);
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: white;
+            color: rebeccapurple;
+        }
+
+        .logo {
+            color: white;
+            float: left;
+            padding: 21px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 3vw;
+            font-weight: bold;
+            position: absolute;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex:25%;
+            background-color: rgba(70,10,92,0.75);
+            padding: 20px;
+            color: white;
+        }
+
+        /* Main column */
+        .main {
+            flex:75%;
+            background-color: rgba(255,255,255,0.8);
+            color: rebeccapurple;
+            text-align: left;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+
+        .responsive {
+            width: 100%;
+            max-width: 510px;
+            height: auto;
+        }
+        .footer a:hover {
+            background-color: white;
+            color: rgba(70,10,92,0.75);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(70,10,92,0.75);
+            color: #E1F1FF;
+            font-weight: bold;
+        }
+
+        a:link, a:visited {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            color: #E1F1FF;
+            padding: 6px 20px;
+            font-size: 20px;
+        }
+
+        a:hover, a:active {
+            background-color: #E1F1FF;
+            color: #0060A8;
+        }
+
+        /* image, just for this example */
+        img {
+            vertical-align:bottom
+        }
+
+
+
+
+        p {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 45px;
+        }
+        h4 {
+            font-size: 38px;
+        }
+        h6 {
+            font-size: 50px;
+            margin: 0 0;
+            padding: 21px;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media only screen and (max-width: 748px) {
+            .side {
+                width: 100%;
+            }
+            .main {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .row {
+                flex-direction: column;
+            }
+
+        }
+        @media screen and (max-width: 828px) {
+            .logo {
+                font-size: 25px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+        }
+        @media screen and (min-width: 1100px) {
+            .logo {
+                font-size: 33px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            img {
+                vertical-align: text-bottom;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">Object Oriented Programming</div>
+<div class="navbar">
+    <a href="index.html">Home</a>
+</div>
+<!-- Header -->
+<div class="header">
+    <h1>Pylint Tutorial and Glossary for OOP</h1>
+    <h3 style="margin-bottom: 42px">Pylint</h3>
+</div>
+<article>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2 style="font-size: 42px;margin-top: 0;text-align: center;padding-top: 19px">Why Testing</h2>
+            <h4 style="margin-bottom: 20px;text-align: center">Concept</h4>
+            <img alt="atomic" class="responsive" src="images/pylint.1.png" style="float:right;clear:right;padding: 20px 20px 35px 20px">
+            <p style="padding-left: 25px;padding-right: 25px">An amateur programmer, usually writing codes can be frustrating if you do not have pointers to show why you are getting errors or how you can fix the errors.</p>
+
+        </div>
+        <div class="main">
+            <h2>What is Pylint ?</h2>
+            <p>
+                Pylint is a tool that is used to check errors in Python code. It  tries
+                to enforce a coding standard.It can display certain
+                type errors, it can recommend suggestions about how particular blocks can be refactored
+                and can offer you details about the code's complexity.
+
+                Some other tools similar to Pylint are  pychecker (now defunct), pyflakes, flake8, and
+                mypy. The default coding style used by Pylint is close to PEP 8.
+
+                Pylint will display a number of messages as it analyzes the code and it can also be used
+                for displaying some statistics about the number of warnings and errors found in
+                different files. The messages are classified under various categories such as errors and
+                warnings.
+                Lets have a look at this :
+                <img src="images/pylint.2.png" alt="image">
+
+                The code is given an overall mark, based on the number and severity
+                of the warnings and errors.It gives us the percentage of coverage .The code is given an overall mark, based on the number and severity
+                of the warnings and errors.It gives us the percentage of coverage .
+                For getting more depth, refer : <a href="https://www.linode.com/docs/guides/install-and-use-pylint-for-python-3/">Pylint
+                Easy</a>
+
+            </p>
+            <h2>Installing Pylint</h2>
+            <p>
+                Pylint can be installed on different IDEs by running the code below in your working environment terminal
+                pip install pylint
+                To install pylint , you need to visit pylint.org and run pip install
+                pylint
+                The Python community has formalized some recommended programming styles to help everyone write
+                code in a common, agreed-upon style that makes the most sense for shared code. This style is
+                captured in PEP 8, the "Style Guide for Python Code". Pylint can be a quick and easy way of
+                seeing if your code has captured the essence of PEP 8 and is therefore friendly to other
+                potential users.
+            </p>
+            <h2>Pylint Message Control</h2>
+            <p>
+                Pylint has an advanced message control for its checks, offering the ability to enable / disable a
+                message either from the command line or from the configuration file, as well as from the code
+                itself.<br>
+
+                For all of these controls, pylint accepts the following values:<br>
+
+                (i) a symbolic message: no-member, undefined-variable etc.<br>
+
+                (ii) a numerical ID: E1101, E1102 etc.The name of the group of checks. You can grab those with
+                pylint --list-groups. For example, you can disable / enable all the checks related to type checking,
+                with typecheck or all the checks related to variables with variables
+
+                Corresponding category of the checks :-<br>
+
+                <i> * C convention related checks<br>
+
+                    * R refactoring related checks<br>
+
+                    * W various warnings<br>
+
+                    * E errors, for probable bugs in the code<br>
+
+                    * F fatal, if an error occurred which prevented pylint from doing further processing<br></i>
+
+            </p>
+            <h2>Keywords and Principles for OOP</h2>
+            <ul>
+                <li>
+                    <h2>Class</h2>
+                    <p>A class is like an object constructor, it is a blueprint for creating objects. It is a guide for creating
+                        objects. To create a class in python we use the keyword class.</p>
+                    <p>For more information <a href="https://www.w3schools.com/python/python_classes.asp"> HERE</a></p>
+                </li>
+                <li>
+                    <h2>Constructor</h2>
+                    <p>The constructor initializes the values of objects in a class. The constructor example below, assigns
+                        values,
+                        first_num and second_num to the class calculator object created above using the __init__() function. For more information
+                        <a href="https://www.programiz.com/python-programming/object-oriented-programming"> HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Class method</h2>
+                    <p> A class method is a method that is bound to the class and not the objects in the class. So for instance
+                        in example below, function start can modify every instance in my class Calculator.
+                        <a href="https://www.programiz.com/python-programming/object-oriented-programming"> HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Instantiation</h2>
+                    <p>Instantiation is creating new objects from a class. For more information
+                        <a href="https://www.programiz.com/python-programming/object-oriented-programming"> HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Object</h2>
+                    <p>According to study.com, an object is a component of a program that knows how to perform certain actions
+                        and how to interact with other elements of the program. It is the basic unit of object- oriented
+                        programming. For more information
+                        <a href="https://www.programiz.com/python-programming/object-oriented-programming"> HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Namespace</h2>
+                    <p>It is a system that has a unique name for each and every object in python. for more information <a
+                            href="https://www.geeksforgeeks.org/namespaces-and-scope-in-python/">HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Fixture</h2>
+                    <p>Fixtures are functions that will run before each test function that it is applied to. For more
+                        information
+                        <a href="https://www.geeksforgeeks.org/namespaces-and-scope-in-python/">HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Type hint</h2>
+                    <p>Type hint tells the type of argument that should/will be passed into a variable.
+                        <a href=https://www.geeksforgeeks.org/namespaces-and-scope-in-python/">HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Type cast</h2>
+                    <p>This is when a data type is converted from one type to another. For more information
+                        <a href="https://www.geeksforgeeks.org/type-casting-in-python-implicit-and-explicit-with-examples/">HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Unit test</h2>
+                    <p>It is testing individual components of a software program or application. This is done to ensure that all
+                        individual parts are working as intended. For more information
+                        <a href="https://www.programiz.com">HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Static</h2>
+                    <p>Static methods are methods that are bound to a class rather than its object.They do not require a class
+                        instance creation. Hence, they are independent of the class object
+                        <a href=https://www.geeksforgeeks.org/namespaces-and-scope-in-python/">HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Factory</h2>
+                    <p>Factory Method is a design for creating patterns used to create concrete implementations of a common
+                        interface.
+                        <a href="https://realpython.com/">HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Facade</h2>
+                    <p>Facade is a structural design pattern that provides a simplified (but limited) interface to a complex
+                        system of classes. It also moves unwanted dependencies to one place. For more information,
+                        <a href=" https://refactoring.guru/">HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Design patterns</h2>
+                    <p>Design patterns is the most essential part of Software Engineering,
+                        as they provide the general repeatable solution to a commonly occurring problem in software design. They
+                        usually represent some of the best practices adopted by experienced object-oriented software
+                        developers. For more information
+                        <a href="https://www.geeksforgeeks.org/">HERE</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Property</h2>
+                    <p>Property in object oriented programming can refer to the attributes of a defined class
+                        <a href="https://www.geeksforgeeks.org/">HERE</a>
+                    </p>
+                </li>
+            </ul>
+
+
+
+        </div>
+    </div>
+
+
+</article>
+<!-- Footer -->
+  <div class="footer">
+    <a href="https://github.com/aad84/internet-history.git" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169;</a>
+    <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" class="responsive" src="images/w3cicon.png" style="padding: 0"></a>
+</div>
+</body>
+</html>
