@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgba(0,96,168,1);
+      background-position: top;
+      background-size: contain;
+      background-attachment: fixed;
+      background-image: url("../images/wwweb.jpg");
+    }
+
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/wwweb.jpg");
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -43%);
+      color: #E1F1FF;
+    }
+
+    .hero-text button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 12px 18px;
+      color: #E1F1FF;
+      background-color: #0060A8;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 26px;
+    }
+
+    .hero-text button:hover {
+      background-color: #002A47;
+      color: #E1F1FF;
+    }
+
+    /* Style the top navigation bar */
+    .navbar {
+      display: flex;
+      padding: 14px 20px;
+      float: right;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+      color: #E1F1FF;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      z-index: 3;
+    }
+
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #0060A8;
+      color: #E1F1FF;
+    }
+
+    .logo {
+      color: #E1F1FF;
+      float: left;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 3vw;
+      font-weight: bold;
+      z-index: 2;
+      position: absolute;
+    }
+
+    .row {
+      display: table;
+      width: 100%;
+    }
+    /* Main column */
+    .box {
+      width: 33.3%;
+      padding: 50px;
+      color: white;
+      display: table-cell;
+    }
+
+    /* Fake image, just for this example */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #0060A8;
+      color: #E1F1FF;
+      font-weight: bold;
+    }
+
+    a:link, a:visited {
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      color: #E1F1FF;
+    }
+
+    a:hover, a:active {
+      background-color: #E1F1FF;
+      color: #0060A8;
+    }
+
+    /* image, just for this example */
+    .webimg {
+      background-color: #E1F1FF;
+      padding: 20px;
+    }
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 822px) {
+      .box {
+        width: 100%;
+      }
+      .navbar {
+        flex-direction: column;
+      }
+      .hero-text {
+        transform: translate(-66%, -45%);
+      }
+      .logo {
+        font-size: 24px;
+      }
+    }
+
+    .break {
+      width: 100%;
+      height: 100px;
+      color: white;
+      background-color: rgba(0,0,0,0.4);
+      vertical-align: center;
+      font-size: 45px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">History of the Internet</div>
+<div class="navbar">
+  <a href="http://history18.eastus.azurecontainer.io">Home</a>
+  <a href="#">Then This</a>
+  <a href="http://history18.eastus.azurecontainer.io/f-layout.html">F Layout</a>
+  <a href="http://history18.eastus.azurecontainer.io/z-layout.html">Z Layout</a>
+</div>
+<!-- Header -->
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">One Strand at a Time</h1>
+    <p style="font-size:25px">Many Small Contributions to One Big Web</p>
+    <button>What Started It All</button>
+  </div>
+</div>
+<article style="background: rgba(0,0,0,0.6);"><!-- The flexible grid (content) -->
+  <div class="break">
+      <p style="margin: 0;padding: 25px">World Wide Web Woven Strands</p>
+  </div>
+  <div class="row">
+    <div class="box">
+      <h2>THE WEB</h2>
+      <h4>Title description, Oct 21, 2021</h4>
+      <div class="webimg"><img alt="web tiles" class="responsive" height="345" src="../images/web.jpg" width="425"></div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="box">
+      <h2>TITLE HEADING</h2>
+      <h4>Title description, Oct 20, 2021</h4>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="box">
+      <h2>TITLE HEADING</h2>
+      <h4>Title description, Oct 20, 2021</h4>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    </div>
+    <div class="row">
+      <div class="box">
+        <h2>THE WEB</h2>
+        <h4>Title description, Oct 21, 2021</h4>
+        <div class="webimg"><img alt="web tiles" class="responsive" height="345" src="../images/web.jpg" width="425"></div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <div class="box">
+        <h2>TITLE HEADING</h2>
+        <h4>Title description, Oct 20, 2021</h4>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <div class="box">
+        <h2>TITLE HEADING</h2>
+        <h4>Title description, Oct 20, 2021</h4>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      </div>
+</article>
+
+<!-- Footer -->
+<div class="footer">
+  <a href="https://github.com/goatz18/internet-history#readme" rel="nofollow" title="Jason W. Guerrieri Github">Jason W. Guerrieri &#169</a>
+  <a href="https://github.com/sehrishsaeed/internet-history-1.git" rel="nofollow" title="Sehrish Saeed Github">Sehrish Saeed &#169</a>
+  <a href="" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169</a>
+  <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">W3C Validator</a>
+</div>
+</body>
+</html>
