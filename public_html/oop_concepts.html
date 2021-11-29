@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-image: url("images/back.jpg");
+            background-color: white;
+            background-position: center top;
+            background-repeat: repeat-y;
+            background-size: contain;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding-top: 35px;
+            padding-bottom: 1px;
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            background-color: rgba(70,10,92,0.85);
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            float: right;
+            padding: 14px 20px;
+            background: rgba(0,0,0,0.0);
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: white;
+            color: rebeccapurple;
+        }
+
+        .logo {
+            color: white;
+            float: left;
+            padding: 21px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 3vw;
+            font-weight: bold;
+            position: absolute;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex:25%;
+            background-color: rgba(70,10,92,0.75);
+            padding: 20px;
+            color: white;
+        }
+
+        /* Main column */
+        .main {
+            flex:75%;
+            background-color: rgba(255,255,255,0.8);
+            color: rebeccapurple;
+            text-align: left;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+
+        .responsive {
+            width: 100%;
+            max-width: 510px;
+            height: auto;
+        }
+        .footer a:hover {
+            background-color: white;
+            color: rgba(70,10,92,0.75);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(70,10,92,0.75);
+            color: #E1F1FF;
+            font-weight: bold;
+        }
+
+        a:link, a:visited {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            color: #E1F1FF;
+            padding: 6px 20px;
+            font-size: 20px;
+        }
+
+        a:hover, a:active {
+            background-color: #E1F1FF;
+            color: #0060A8;
+        }
+
+        /* image, just for this example */
+        img {
+            vertical-align:bottom
+        }
+
+
+
+
+        p {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 45px;
+        }
+        h4 {
+            font-size: 38px;
+        }
+        h6 {
+            font-size: 50px;
+            margin: 0 0;
+            padding: 21px;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media only screen and (max-width: 748px) {
+            .side {
+                width: 100%;
+            }
+            .main {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .row {
+                flex-direction: column;
+            }
+
+        }
+        @media screen and (max-width: 828px) {
+            .logo {
+                font-size: 25px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+        }
+        @media screen and (min-width: 1100px) {
+            .logo {
+                font-size: 33px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            img {
+                vertical-align: text-bottom;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">Object Oriented Programming</div>
+<div class="navbar">
+    <a href="index.html">Home</a>
+</div>
+<!-- Header -->
+<div class="header">
+    <h1>Object Oriented Programming Concepts </h1>
+    <h3 style="margin-bottom: 42px">Crucial Elements featuring Calculator</h3>
+</div>
+<article>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2 style="font-size: 42px;margin-top: 0;text-align: center;padding-top: 19px">Why OOP?</h2>
+            <h4 style="margin-bottom: 20px;text-align: center">Concept</h4>
+            <img alt="atomic" class="responsive" src="images/oop.python.png" style="float:right;clear:right;padding: 20px 20px 35px 20px">
+            <p style="padding-left: 25px;padding-right: 25px">Object-oriented programming (OOP) is a programming paradigm that allows you to package together data states and functionality to modify those data states, while keeping the details hidden away (like with the lightbulb). As a result, code with OOP design is flexible, modular, and abstract.</p>
+
+        </div>
+        <div class="main">
+            <h2>Encapsulation </h2>
+            <p>
+                Encapsulation is one of the fundamental concepts in
+                object-oriented programming (OOP). Encapsulation is the packing of data and functions
+                that work on that data within a single object. By doing so, you can hide the internal
+                state of the object from the outside. This is known as information hiding.
+
+                A class is an example of encapsulation. A class bundles data and methods into a single
+                unit. And a class provides the access to its attributes via methods.
+
+                The idea of information hiding is that if you have an attribute that isn’t visible to
+                the outside, you can control the access to its value to make sure your object is always
+                has a valid state.Let us look at the following calculator illustration:
+
+                <img src="images/encap.png" alt="image">
+            </p>
+            <h2> Inheritance</h2>
+            <p>
+                Inheritance allows us to define a class that inherits all the
+                methods and properties from another class.
+
+                Parent class is the class being inherited from, also called base class.
+
+                Child class is the class that inherits from another class, also called derived class.The
+                benefits of inheritance are:
+
+
+                It represents real-world relationships well.
+                It provides reusability of a code. We don’t have to write the same code again and again.
+                Let us look at the following calculator illustration:
+
+                <img src="images/inheri.png" alt="image">
+            </p>
+            <h2> Polymorphism</h2>
+            <p>
+                Polymorphism is a very important concept in programming.The word polymorphism literally
+                means having many forms. It refers to the use of a single type entity (method, operator
+                or object) to represent different types in different scenarios.In Python, Polymorphism
+                lets us define methods in the child class that have the same name as the methods in the
+                parent class.However, it is possible to modify a method in a child class that it has
+                inherited from the parent class.
+                Let us look at the following calculator illustration:
+
+                <img src="images/poly.png" alt="image">
+            </p>
+            <h2> Abstraction</h2>
+            <p>
+                Abstraction is used to hide the internal functionality of the
+                function from the users. The users only interact with the basic implementation of the
+                function, but inner working is hidden.In Python, an abstraction is used to hide the
+                irrelevant data/class in order to reduce the complexity. It also enhances the
+                application efficiency.
+                In Python, abstraction can be achieved by using abstract classes and interfaces.A class
+                that consists of one or more abstract method is called the abstract class.
+                Let us look at the following calculator illustration:
+
+                <img src="images/abs.png" alt="image">
+            </p>
+
+        </div>
+    </div>
+
+
+</article>
+<!-- Footer -->
+<div class="footer">
+    <a href="https://github.com/aad84/internet-history.git" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169;</a>
+    <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" class="responsive" src="images/w3cicon.png" style="padding: 0"></a>
+</div>
+</body>
+</html>

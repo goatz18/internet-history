@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-image: url("images/back.jpg");
+            background-color: white;
+            background-position: center top;
+            background-repeat: repeat-y;
+            background-size: contain;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding-top: 35px;
+            padding-bottom: 1px;
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            background-color: rgba(70,10,92,0.85);
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            float: right;
+            padding: 14px 20px;
+            background: rgba(0,0,0,0.0);
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: white;
+            color: rebeccapurple;
+        }
+
+        .logo {
+            color: white;
+            float: left;
+            padding: 21px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 3vw;
+            font-weight: bold;
+            position: absolute;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex:25%;
+            background-color: rgba(70,10,92,0.75);
+            padding: 20px;
+            color: white;
+        }
+
+        /* Main column */
+        .main {
+            flex:75%;
+            background-color: rgba(255,255,255,0.8);
+            color: rebeccapurple;
+            text-align: left;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+
+        .responsive {
+            width: 100%;
+            max-width: 510px;
+            height: auto;
+        }
+        .footer a:hover {
+            background-color: white;
+            color: rgba(70,10,92,0.75);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(70,10,92,0.75);
+            color: #E1F1FF;
+            font-weight: bold;
+        }
+
+        a:link, a:visited {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            color: #E1F1FF;
+            padding: 6px 20px;
+            font-size: 20px;
+        }
+
+        a:hover, a:active {
+            background-color: #E1F1FF;
+            color: #0060A8;
+        }
+
+        /* image, just for this example */
+        img {
+            vertical-align:bottom
+        }
+
+
+
+
+        p {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 45px;
+        }
+        h4 {
+            font-size: 38px;
+        }
+        h6 {
+            font-size: 50px;
+            margin: 0 0;
+            padding: 21px;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media only screen and (max-width: 748px) {
+            .side {
+                width: 100%;
+            }
+            .main {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .row {
+                flex-direction: column;
+            }
+
+        }
+        @media screen and (max-width: 828px) {
+            .logo {
+                font-size: 25px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+        }
+        @media screen and (min-width: 1100px) {
+            .logo {
+                font-size: 33px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            img {
+                vertical-align: text-bottom;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">Object Oriented Programming</div>
+<div class="navbar">
+    <a href="index.html">Home</a>
+</div>
+<!-- Header -->
+<div class="header">
+    <h1>Introduction to AAA testing </h1>
+    <h3 style="margin-bottom: 42px">AAA testing</h3>
+</div>
+<article>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2 style="font-size: 42px;margin-top: 0;text-align: center;padding-top: 19px">Software Testing</h2>
+            <h4 style="margin-bottom: 20px;text-align: center">Concept</h4>
+            <img alt="atomic" class="responsive" src="images/aaa.png" style="float:right;clear:right;padding: 20px 20px 35px 20px">
+            <p style="padding-left: 25px;padding-right: 25px">Software Testing checks the actual
+                software product matches expected requirements and to ensure that software product
+                doesn't deviate from the requirements and is bug free.The purpose of software testing is
+                to identify errors, any deviations from the
+                actual requirements.</p>
+
+        </div>
+        <div class="main">
+            <h2>ARRANGE-ACT-ASSERT </h2>
+            <p>
+                Arrange-Act-Assert ,popularly known as the AAA testing is a great way
+                to structure test cases. It
+                describes the order of operations: Arrange inputs and targets. Arrange steps should set
+                up the test case. It handles all of these operations at
+                the start of the test. Act on the target behavior. Act steps should cover the main thing
+                to be tested. This could be calling a function or method, calling a REST API, or
+                interacting with a web page. Keep actions focused on the target behavior.</p>
+            <p>Assert expected outcomes. Act steps should elicit some sort of
+                response. Assert steps verify the goodness or badness of that response. Sometimes,
+                assertions are as simple as checking numeric or string values. Other times, they may require
+                checking multiple facets of a system. Assertions will ultimately determine if the test
+                passes or fails.</p>
+            <br>
+            <p><b>Arrange-Act-Assert</b> is powerful because it is simple. It forces tests to focus on
+                independent, individual behaviors. It separates setup actions from the main actions. It
+                requires test to make verifications and not merely run through motions. Notice how the
+                pattern is not Arrange-Act-Assert-Act-Assert – subsequent actions and assertions belong in
+                separate tests! Arrange-Act-Assert is a great pattern to follow for writing good functional
+                tests
+
+                <img src="images/AAA.1.png" alt="image">
+
+            </p>
+
+            <h2>AAA testing with Calculator</h2>
+            <p>
+                Let's look at given example a simple calculator class that adds and subtracts:
+                <img src="images/AAA.2.png" alt="image">
+
+
+
+                <a href="https://github.com/aad84/calc2/blob/main/tests/calculator_test.py">Calculator Unit Testing</a>
+                Here, let us take a very simple example of unit testing of addition function <br>
+                <br>
+                <code> def test_calculator_add_result():<br>
+                    """testing calculator result """<br>
+                    &nbsp; calc = Calculator()<br>
+                    &nbsp; result = calc.add(1,2)<br>
+                    &nbsp; assert result == 3 </code> <br>
+                his is the code that we will test. The code is very simple, the
+                class contains only addition function and it will always return the sum of the two numbers
+                .Now, add one unit test application to the solution
+
+                In the above example, if no parameters are passed then<br>
+
+                assert calc.get_result()==0.<br>
+
+                The actual program is the calculator folder but the tests are in the tests folder .It
+                contains a series of tests to check that the operations performed by the calculator are
+                correct
+                The code that is checking the operation is in test folder<br>
+                AAA testing is done by instating a class.<br>
+                calc= Calculator()<br>
+
+                Act by calling a method to be tested -performing the action of adding test<br>
+
+                calc.add_number(4)<br>
+
+                Assert that the results are correct.This actually tests the result <br>
+
+                assert calc.result==4<br>
+            </p>
+            <h2>AAA testing with External data</h2>
+            <p>
+            This article tends to explain how to write a program to read from a csv file .We have a csv file that has
+                column 1 and column 2 which have number1 and number2 values on which the arithmetic operations
+                addition, subtraction, multiplication and division needs to be performed.We need to import
+                pandas to read from the csv files.Let us look in to the simple code below.
+
+                <code>
+                    import pandas as pd <br>
+                    datafile = pd.read_csv("Addition - Sheet1.csv")<br>
+
+                    datafile["addition"]=datafile["number1"] + datafile["number2"]<br>
+                    datafile["subtraction"]=datafile["number1"] + datafile["number2"]<br>
+                    datafile["multiplication"]=datafile["number1"] + datafile["number2"]<br>
+                    datafile["division"]=datafile["number1"] + datafile["number2"]<br>
+                    print(datafile)<br><br>
+                </code>
+                <img src="images/python.1.png" alt="image">
+
+        </div>
+    </div>
+
+
+</article>
+<!-- Footer -->
+<div class="footer">
+    <a href="https://github.com/aad84/internet-history.git" rel="nofollow" title="Ayush Deshpande Github">Ayush Deshpande &#169;</a>
+    <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5"><img alt="w3c" class="responsive" src="images/w3cicon.png" style="padding: 0"></a>
+</div>
+</body>
+</html>
