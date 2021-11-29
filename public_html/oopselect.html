@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dunno Yet</title>
+    <title>SOLID</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <style>
         * {
@@ -13,7 +13,7 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            background-image: url("images/python.jpg");
+            background-image: url("images/solid.jpg");
             background-color: lightgoldenrodyellow;
             background-position: center top;
             background-repeat: repeat-y;
@@ -123,7 +123,7 @@
             vertical-align: bottom;
         }
         .responsive {
-            width: 100%;
+            width: 75%;
             height: auto;
         }
         .break {
@@ -197,6 +197,9 @@
             img {
                 vertical-align: text-bottom;
             }
+            .responsive {
+                width: 100%;
+            }
         }
 
     </style>
@@ -210,54 +213,54 @@
 </div>
 <!-- Header -->
 <div class="header"><br>
-    <h1>Object Oriented Programming</h1>
-    <h3 style="margin-bottom: 42px">Principles: Calculator Program Examples</h3>
+    <h1>S.O.L.I.D.</h1>
+    <h3 style="margin-bottom: 42px">S.O.L.I.D. Principles in Calculator</h3>
 </div>
 <article>
     <!-- The flexible grid (content) -->
     <div class="row">
         <div class="side">
             <h2 style="font-size: 48px;margin-top: 0;text-align: center;padding-top: 19px">Fundamental Concepts</h2>
-            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Encapsulation</h4>
-            <p style="padding-left: 25px;padding-right: 25px">Encapsulation describes the idea of wrapping data and all the methods that work on said data, within one unit.</p>
-            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Inheritance</h4>
-            <p style="padding-left: 25px;padding-right: 25px">Inheritance is the capability of one class to derive or inherit properties from another class</p>
-            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Polymorphism</h4>
-            <p style="padding-left: 25px;padding-right: 25px">Polymorphism the word means having many forms. In programming, polymorphism means having the same function name (but different signatures) being used for different types.</p>
-            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">Abstraction</h4>
-            <p style="padding-left: 25px;padding-right: 25px">Abstract classes can be considered as blueprints for other classes. It allows a set of methods to be created within child classes that are built from the abstract class. A class with one or more abstract methods is an abstract class.</p>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">1. Single Responsibility Principle</h4>
+            <p style="padding-left: 25px;padding-right: 25px">The Single Responsibility Principle requires that a class should have only one job. So if a class has more than one responsibility, it becomes coupled. A change to one responsibility results to modification of the other responsibility.</p>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">2. Open-Closed Principle</h4>
+            <p style="padding-left: 25px;padding-right: 25px">Software entities such as Classes, modules, and functions should be open for extension, not modification.</p>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">3. Liskov Substitution Principle</h4>
+            <p style="padding-left: 25px;padding-right: 25px">The main idea behind Liskov Subtitution Principle is that, for any class, a client should be able to use any of its subtypes indistinguishably, without even noticing, and therefore without compromising the expected behavior at runtime. This means that clients are completely isolated and unaware of changes in the class hierarchy.</p>
+            <h4 style="margin-bottom: 20px;margin-top: 20px;text-align: center">4. Interface Segregation Principle</h4>
+            <p style="padding-left: 25px;padding-right: 25px">Make fine grained interfaces that are client specific Clients should not be forced to depend upon interfaces that they do not use. This principle deals with the disadvantages of implementing big interfaces.</p>
         </div>
         <div class="main"><br>
-            <h6 style="text-align: center">Encapsulation</h6>
-            <h2>Protected Members</h2>
+            <h6 style="text-align: center">1. Single Responsibility Principle</h6>
+            <h2>Calculator Example</h2>
             <p>
-                Protected members are the members of a class that exist and can only be accessed only from within a certain class and it's subclasses. In Python, this is accomplished by following a convention of prefixing the name of the member by a single underscore "_".
+                Here is an example of how the job of the class "Calculation" doesn't actually do any calculating as it merely acquires a list of float values first, and then the separate classes for computing have their own individual classes. The calculation class could do both find float values and perform calculations, but that would violate the Single Responsibility Principle. For example here are also the "Addition" and "Subtraction" classes that all accomplish only one job, all seen below.
             </P>
-            <h2>Private Members</h2>
-            <p>
-                Private members, although similar to protected members, differ in that they are neither accessed outside of their class nor by any base class. In Python, private members can only be accessed inside of a class. Private memebers are defined by a prefix of a double underscore "__".
-            </p>
-            <p>
-                This is accomplished in the calculator program as shown below. The values used to perform calculations are getting run through a constructor under "__init__", which then uses a "staticmethod" and returns all values back as float values.
-            </p>
-            <img alt="encapsulation" class="responsive" src="images/encapsulation.png" style="padding: 20px">
+            <img alt="addition" class="responsive" src="images/calculation.png" style="padding: 20px">
+            <img alt="addition" class="responsive" src="images/inheritancesub.png" style="padding: 20px">
+            <img alt="addition" class="responsive" src="images/polymorphism.png" style="padding: 20px">
 
         </div>
     </div>
 
     <div class="break">
         <h6>
-            Inheritance
+            2. Open-Closed Principle
         </h6>
     </div>
 
     <div class="row">
         <div class="main-bottom">
-            <h4>The Benefits of Inheritance</h4>
+            <h4>Calculator Example</h4>
             <p>
-                1. It represents real-world relationships well.<br>
-                2. It provides reusability of a code. We don’t have to write the same code again and again. Also, it allows us to add more features to a class without modifying it.<br>
-                3. It is transitive in nature, which means that if class B inherits from another class A, then all the subclasses of B would automatically inherit from class A.
+                For this principle, our example from above also happens to apply. Instead of adding simple if statements to the "Calculation" class, for example
+            </p>
+            <p>
+                if self.calculation == 'addition'<br>
+                return self.value + a
+            </p>
+            <p>
+                We instead create separate classes that extend Calculation, such as "Addition(Calculation)" and "Subtraction(Calculation)" to implement the new behavior.
             </p>
             <h4>Calculator Examples</h4>
             <p>
@@ -274,7 +277,7 @@
 
     <div class="break">
         <h6>
-            Polymorphism
+            3. Liskov Substitution Principle
         </h6>
     </div>
 
@@ -296,7 +299,25 @@
 
     <div class="break">
         <h6>
-            Abstraction
+            4. Interface Segregation Principle
+        </h6>
+    </div>
+
+    <div class="row">
+        <div class="main-bottom">
+            <h4>Abstract Classes in Python</h4>
+            <p>
+                An abstract class can be considered as a blueprint for other classes. It allows you to create a set of methods that must be created within any child classes that were built from that abstract class. Usually abstract classes require decorating as "abstractmethod", except when implemented through subclassing.
+            </p>
+            <p>
+                By subclassing from a base, we can avoid the need to register the class explicitly. In this case, the Python class management is used to recognize 'PluginImplementation' as implementing the abstract PluginBase. Here is a calculator example below using "from.abc.examplea.exampleb" and "import otherexample".
+            </p>
+            <img alt="abstract" class="responsive" src="images/abstract.png" style="padding: 20px">
+        </div>
+    </div>
+    <div class="break">
+        <h6>
+            5. Dependecy Inversion Principle
         </h6>
     </div>
 
