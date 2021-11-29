@@ -262,15 +262,6 @@
             <p>
                 We instead create separate classes that extend Calculation, such as "Addition(Calculation)" and "Subtraction(Calculation)" to implement the new behavior.
             </p>
-            <h4>Calculator Examples</h4>
-            <p>
-                The calculation class is the base/super/parent class and the addition, subtraction, multiplication, and division classes are the inherited/sub/child classes. Here is an example of the parent class "Calculation" and the child class "Addition(Calculation)":
-            </p>
-            <img alt="parent" class="responsive" src="images/inheritancebase.png" style="padding: 20px">
-            <img alt="child" class="responsive" src="images/inheritancesub.png" style="padding: 20px">
-            <p>
-                That was also an example of "Single Inheritance." That is when there is one parent class that a child class inherits from.<br>
-            </p>
 
         </div>
     </div>
@@ -283,16 +274,11 @@
 
     <div class="row">
         <div class="main-bottom">
-            <h4>Polymorphism in Python</h4>
+            <h4>Calculator Example</h4>
             <p>
-                In programming, polymorphism means that the same function name(s) (however different signatures) are being used for different types.
+                In the class "Calculations" we get the history of calculations and is a great example of the Liskov Substitution Principle, as all specializations of the class are suitable by the parent or superclass.
             </p>
-            <h4>Calculator Example: User-Defined Polymorphic Functions</h4>
-            <p>
-                The "get_result" class method is used for all addition, subtraction, multiplication, and division child classes. For example, here is addition and subtraction child classes below:
-            </p>
-            <img alt="addition" class="responsive" src="images/inheritancesub.png" style="padding: 20px">
-            <img alt="addition" class="responsive" src="images/polymorphism.png" style="padding: 20px">
+            <img alt="addition" class="responsive" src="images/3liskov.png" style="padding: 20px">
 
         </div>
     </div>
@@ -305,32 +291,28 @@
 
     <div class="row">
         <div class="main-bottom">
-            <h4>Abstract Classes in Python</h4>
+            <h4>Calculator Example</h4>
             <p>
-                An abstract class can be considered as a blueprint for other classes. It allows you to create a set of methods that must be created within any child classes that were built from that abstract class. Usually abstract classes require decorating as "abstractmethod", except when implemented through subclassing.
+                In this example you can see here that the "Calculator" class provides us with our core interface segregations, resulting in loose coupling and easy testing.
             </p>
-            <p>
-                By subclassing from a base, we can avoid the need to register the class explicitly. In this case, the Python class management is used to recognize 'PluginImplementation' as implementing the abstract PluginBase. Here is a calculator example below using "from.abc.examplea.exampleb" and "import otherexample".
-            </p>
-            <img alt="abstract" class="responsive" src="images/abstract.png" style="padding: 20px">
+            <img alt="abstract" class="responsive" src="images/4interface.png" style="padding: 20px">
         </div>
     </div>
     <div class="break">
         <h6>
-            5. Dependecy Inversion Principle
+            5. Dependency Inversion Principle
         </h6>
     </div>
 
     <div class="row">
         <div class="main-bottom">
-            <h4>Abstract Classes in Python</h4>
+            <h4>Calculator Example</h4>
             <p>
-                An abstract class can be considered as a blueprint for other classes. It allows you to create a set of methods that must be created within any child classes that were built from that abstract class. Usually abstract classes require decorating as "abstractmethod", except when implemented through subclassing.
+                For this example we go back to the "Calculator" class, low level, that generates float values, and the many actual calculation classes, high level, such as "Addition" and "Subtraction". They don't depend on themselves, but they do depend on abstractions. The client simply enacts the calculator and gets a result.
             </p>
-            <p>
-                By subclassing from a base, we can avoid the need to register the class explicitly. In this case, the Python class management is used to recognize 'PluginImplementation' as implementing the abstract PluginBase. Here is a calculator example below using "from.abc.examplea.exampleb" and "import otherexample".
-            </p>
-            <img alt="abstract" class="responsive" src="images/abstract.png" style="padding: 20px">
+            <img alt="addition" class="responsive" src="images/calculation.png" style="padding: 20px">
+            <img alt="addition" class="responsive" src="images/inheritancesub.png" style="padding: 20px">
+            <img alt="addition" class="responsive" src="images/polymorphism.png" style="padding: 20px">
         </div>
     </div>
 
