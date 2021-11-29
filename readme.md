@@ -1,5 +1,7 @@
 # History of the Internet
 
+Project 2 Additions by myself, Jason W. Guerrieri
+
 Jason W. Guerrieri:
 1. Home Page
 2. Behind The Web
