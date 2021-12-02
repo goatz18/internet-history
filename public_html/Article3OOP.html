@@ -211,7 +211,7 @@
 <!-- Header -->
 <div class="header"><br>
     <h1>Object Oriented Programming</h1>
-    <h3 style="margin-bottom: 42px">The importance and why we should use it</h3>
+    <h3 style="margin-bottom: 42px">4 important concepts to know</h3>
 </div>
 <article>
     <!-- The flexible grid (content) -->
@@ -224,12 +224,24 @@
             <h2>What do all these mean?</h2>
             <p>
             There are 4 basic principles of Object Oriented Programming
-               <li>Polymorphism gives a way to use a clas exactly like its parent so there's no confusion with mixing types.
-                But each child class keeps its own methods as they are. This typically happens by defining a parent interface
-                to be reused. It outlines a bunch of common methods. Then, each child class implements its own version of
-                these methods.</li>
-                 <li>Encapsulation is achieved when each object keeps its state private, inside a class. Other objects don't have
-                access to this state. Instead, they can only call a list of public functions which are called methods.</li>
+                <h2>Polymorphism</h2>
+               <li><mark>Polymorphism gives a way to use a class exactly like its parent so there's no confusion with mixing types.
+                   It is also is used so that a variable, function, or object can take multiple forms. Polymorphism uses a single symbol to
+                   represent multiple different types. This typically happens by defining a parent interface to be reused. Child classes implement their own version of these methods.</li><br></mark><br>
+            <br>
+              <h3>Calculator Utilization</h3><br>
+            When we used the "get_result" method we could see polymorphism being used. This is represented in polymorphism
+            because the values are being represented in various ways.
+
+            <br>
+              <h2>Encapsulation</h2>
+               <li> <mark> Encapsulation is achieved when each object keeps its state private, inside a class. Other objects don't have
+                access to this state. Instead, they can only call a list of public functions which are called methods.</li><br>
+                <br></mark>
+            <h3>Calculator Utilization</h3>
+           <b>This is used in the calculator project when using the "__init__" feature. We also incorporated using
+            staticmethods which would give us values as floats. This is represented in polymorphism because the values are being
+            represented in various ways.</b>
 Example of encapsulation below:
             <ul type="square">
  <li>public class Employee {</li>
@@ -245,16 +257,40 @@ Example of encapsulation below:
         this.dob = dob;</li>
 }
 </ul>
-              <li> Abstraction is basically the next step of encapsulation. In using OOP, Abstraction is your solution
-            to programs that are very large and involve a lot of different objects that communicate with each other.
-                  "Using abstract class/Interface we express the intent of the class rather than the actual
+              <h2>Abstraction</h2>
+             <b> <li> <mark>Abstraction is basically the next step of encapsulation. In using OOP, Abstraction is your solution
+            to programs that are very large and involve a lot of different objects that communicate with each other.</b><br></mark>
+                  <br>
+                  <b><mark>"Using abstract class/Interface we express the intent of the class rather than the actual
                   implementation. In a way, one class should not know the inner details of another in order to use it,
                   just knowing the interfaces should be good enough." --https://medium.com/@cancerian0684/what-are-four-
-                  basic-principles-of-object-oriented-programming-645af8b43727</li>
-
-            <li>One way to think about inheritance is that it aims to express “is-a” and/or “has-a” relationship between two objects.
-                The benefit is that it provides re-usability of a code.</li> </p>
-
+                  basic-principles-of-object-oriented-programming-645af8b43727</li> <br></b></mark>
+            <h3>Calculator Utilization</h3><br>
+            <br>
+            We used abstraction in the calculator project when we used the import feature<br>
+            <br>
+            Ex. "from calc.calculations.addition import Addition"
+            This example format serves as a blueprit for other classes. It allowed us to create a set of methods that
+            could be used withing any child classes that were to be built from the abstract classes.
+<br>
+              <h2>Inheritance</h2>
+            <li><b> <mark> One way to think about inheritance is that it aims to express “is-a” and/or “has-a” relationship between two objects.
+                The benefit is that it provides re-usability of a code.</li> </p></b></mark>
+ <h3>Calculator Utilization</h3><br>
+            <br>
+            We used inheritance when we wrote the code for the different classes. For exmaple, the code I used for division
+            is below:
+            """Division"""
+<b>from calc.Calculations.calculation import Calculation<br>
+<br>
+class Division(Calculation):
+    """division calculation object"""
+    def get_result(self):
+        """get the division results"""
+        div_result = 1.0
+        for value in self.values:
+            div_result = div_result * value
+        return div_result<b>
 
 
         </div>
